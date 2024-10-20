@@ -13,6 +13,8 @@ DOMAIN-SUFFIX,ipv6.msftconnecttest.com
 DOMAIN-KEYWORD,mirror
 DOMAIN-KEYWORD,ghp
 
+# lastwar
+DOMAIN-KEYWORD,lastwar
 
 # 360
 DOMAIN-SUFFIX,360.com
