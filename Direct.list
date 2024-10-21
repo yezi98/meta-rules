@@ -16,8 +16,8 @@ DOMAIN-KEYWORD,ghp
 # lastwar
 DOMAIN-KEYWORD,lastwar
 
-# f2pool
-DOMAIN-KEYWORD,aleo-asia
+# f2pool中转aws
+DOMAIN-SUFFIX,aleo.us.kg
 
 # 360
 DOMAIN-SUFFIX,360.com
