@@ -22,6 +22,9 @@ DOMAIN-SUFFIX,aleo.us.kg
 # getgrass.io
 DOMAIN-SUFFIX,getgrass.io
 
+# 英伟达nvidia
+DOMAIN-KEYWORD,nvidia
+
 # 360
 DOMAIN-SUFFIX,360.com
 DOMAIN-SUFFIX,360kuai.com
