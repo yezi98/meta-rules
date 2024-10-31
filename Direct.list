@@ -25,6 +25,9 @@ DOMAIN-SUFFIX,getgrass.io
 # 英伟达nvidia
 DOMAIN-KEYWORD,nvidia
 
+# 香港中银 bochk
+DOMAIN-KEYWORD,bochk
+
 # 360
 DOMAIN-SUFFIX,360.com
 DOMAIN-SUFFIX,360kuai.com
