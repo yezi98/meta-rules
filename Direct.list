@@ -16,6 +16,9 @@ DOMAIN-KEYWORD,ghp
 # lastwar
 DOMAIN-KEYWORD,lastwar
 
+# rustdesk自建阿里云服务器
+DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
+
 # f2pool中转aws
 DOMAIN-SUFFIX,aleo.us.kg
 
