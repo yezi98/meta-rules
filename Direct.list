@@ -16,23 +16,23 @@ DOMAIN-KEYWORD,ghp
 # lastwar
 DOMAIN-KEYWORD,lastwar
 
-# grass
+# getgrass.io
 IP-CIDR,50.118.166.152/32,no-resolve
 IP-CIDR,50.118.166.172/32,no-resolve
 IP-CIDR,50.118.166.249/32,no-resolve
 IP-CIDR,50.118.166.13/32,no-resolve
 IP-CIDR,50.118.166.46/32,no-resolve
+IP-CIDR,50.118.166.116/32,no-resolve
+IP-CIDR,50.118.166.179/32,no-resolve
 DOMAIN-SUFFIX,api.cx.metamask.io
+DOMAIN-SUFFIX,getgrass.io
+DOMAIN-KEYWORD,grass
 
 # rustdesk自建阿里云服务器
 DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
 
 # f2pool中转aws
 DOMAIN-SUFFIX,aleo.us.kg
-
-# getgrass.io
-DOMAIN-SUFFIX,getgrass.io
-DOMAIN-KEYWORD,grass
 
 # 英伟达nvidia
 DOMAIN-KEYWORD,nvidia
