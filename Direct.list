@@ -21,6 +21,7 @@ IP-CIDR,50.118.166.152/32,no-resolve
 IP-CIDR,50.118.166.172/32,no-resolve
 IP-CIDR,50.118.166.249/32,no-resolve
 IP-CIDR,50.118.166.13/32,no-resolve
+IP-CIDR,50.118.166.46/32,no-resolve
 DOMAIN-SUFFIX,api.cx.metamask.io
 
 # rustdesk自建阿里云服务器
