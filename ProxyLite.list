@@ -16,6 +16,11 @@ DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,smadex.com
 DOMAIN-SUFFIX,cdn.forter.com
 DOMAIN-SUFFIX,sgsnssdk.com
+DOMAIN-SUFFIX,mintegral.net
+DOMAIN-SUFFIX,i18n-pglstatp.com
+DOMAIN-SUFFIX,mtgglobals.com
+DOMAIN-SUFFIX,dsp-api.moloco.com
+DOMAIN-SUFFIX,adsmoloco.com
 
 # chainpredict
 DOMAIN-SUFFIX,chainpredict.com
