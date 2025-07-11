@@ -16,6 +16,7 @@ DOMAIN-KEYWORD,facebook
 
 # chainpredict
 DOMAIN-SUFFIX,chainpredict.com
+DOMAIN-SUFFIX,efsanetr.com
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
