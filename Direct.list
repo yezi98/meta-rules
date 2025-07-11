@@ -16,6 +16,10 @@ DOMAIN-KEYWORD,ghp
 # lastwar
 DOMAIN-KEYWORD,lastwar
 
+# grass
+IP-CIDR,50.118.166.152/32,no-resolve
+IP-CIDR,50.118.166.172/32,no-resolve
+
 # rustdesk自建阿里云服务器
 DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
 
