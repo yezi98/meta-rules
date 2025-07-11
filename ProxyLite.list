@@ -7,12 +7,15 @@ DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-KEYWORD,1e100
 
 # PI
-DOMAIN-KEYWORD,applovin
-DOMAIN-KEYWORD,onesignal
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,onesignal.com
 DOMAIN-KEYWORD,pangle
-DOMAIN-KEYWORD,socialchain.app
+DOMAIN-KEYWORD,socialchain
 DOMAIN-KEYWORD,applvn
-DOMAIN-KEYWORD,facebook
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,smadex.com
+DOMAIN-SUFFIX,cdn.forter.com
+DOMAIN-SUFFIX,sgsnssdk.com
 
 # chainpredict
 DOMAIN-SUFFIX,chainpredict.com
