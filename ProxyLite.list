@@ -12,6 +12,7 @@ DOMAIN-KEYWORD,onesignal
 DOMAIN-KEYWORD,pangle
 DOMAIN-KEYWORD,socialchain
 DOMAIN-KEYWORD,applvn
+DOMAIN-KEYWORD,facebook
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
