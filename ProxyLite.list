@@ -7,10 +7,10 @@ DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-KEYWORD,1e100
 
 # PI
-DOMAIN-SUFFIX,applovin.com
-DOMAIN-SUFFIX,onesignal.com
-DOMAIN-SUFFIX,pangle.io
-DOMAIN-SUFFIX,socialchain.app
+DOMAIN-KEYWORD,applovin
+DOMAIN-KEYWORD,onesignal
+DOMAIN-KEYWORD,pangle
+DOMAIN-KEYWORD,socialchain
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google
