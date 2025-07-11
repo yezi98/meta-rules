@@ -26,9 +26,11 @@ IP-CIDR,50.118.166.116/32,no-resolve
 IP-CIDR,50.118.166.179/32,no-resolve
 IP-CIDR,50.118.166.35/32,no-resolve
 IP-CIDR,50.118.166.239/32,no-resolve
+IP-CIDR,50.118.167.114/32,no-resolve
 DOMAIN-SUFFIX,api.cx.metamask.io
 DOMAIN-SUFFIX,getgrass.io
 DOMAIN-KEYWORD,grass
+DOMAIN-SUFFIX,ljhsnzpc.com
 
 # rustdesk自建阿里云服务器
 DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
