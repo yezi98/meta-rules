@@ -42,61 +42,6 @@ DOMAIN-SUFFIX,aleo.us.kg
 # 英伟达nvidia
 DOMAIN-KEYWORD,nvidia
 
-# 境外银行中资银行
-+.bochk.com
-+.ccbintl.com.hk
-+.ccbseoul.com
-+.citics.com.hk
-+.cncbinternational.com
-+.csci.hk
-+.cmbi.com.hk
-+.cmbwinglungbank.com
-+.icbc-at.com
-+.icbc-cz.com
-+.icbc-ltd.com
-+.icbc-uk.com
-+.icbc-us.com
-+.icbc.ae
-+.icbc.be
-+.icbc.co.id
-+.icbc.co.jp
-+.icbc.co.kr
-+.icbc.co.nl
-+.icbc.com.au
-+.icbc.com.es
-+.icbc.com.kh
-+.icbc.com.kw
-+.icbc.com.la
-+.icbc.com.mm
-+.icbc.com.mo
-+.icbc.com.mx
-+.icbc.com.pe
-+.icbc.com.pk
-+.icbc.com.qa
-+.icbc.com.sg
-+.icbc.com.vn
-+.icbc.de
-+.icbc.eu
-+.icbc.lu
-+.icbcalmaty.kz
-+.icbcasia.com
-+.icbcbr.com.br
-+.icbci.com.hk
-+.icbcindia.com
-+.icbcit.com
-+.icbclondon.com
-+.icbcme.ae
-+.icbcmoscow.ru
-+.icbcmy.com
-+.icbcnz.com
-+.icbcpanama.com
-+.icbcparis.fr
-+.icbcpl.com
-+.icbcswiss.com
-+.icbcthai.com
-+.icbkfs.com
-+.icbkus.com
-
 # 360
 DOMAIN-SUFFIX,360.com
 DOMAIN-SUFFIX,360kuai.com
@@ -106,7 +51,6 @@ DOMAIN-SUFFIX,qhres.com
 DOMAIN-SUFFIX,qhstatic.com
 DOMAIN-SUFFIX,qhupdate.com
 DOMAIN-SUFFIX,so.com
-
 
 # 58
 DOMAIN-SUFFIX,58.com
@@ -234,7 +178,6 @@ DOMAIN-SUFFIX,cctv.com
 DOMAIN-SUFFIX,cctvpic.com
 DOMAIN-SUFFIX,livechina.com
 
-
 # HuaWei
 DOMAIN-SUFFIX,dbankcdn.com
 DOMAIN-SUFFIX,hc-cdn.com
@@ -246,7 +189,6 @@ DOMAIN-SUFFIX,huaweishop.net
 DOMAIN-SUFFIX,hwccpc.com
 DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,vmallres.com
-
 
 # Iqiyi
 DOMAIN-SUFFIX,71.am
@@ -404,7 +346,6 @@ DOMAIN-SUFFIX,sandai.net
 DOMAIN-SUFFIX,thundercdn.com
 DOMAIN-SUFFIX,xunlei.com
 
-
 # Public Direct CDN 公共直连
 #DOMAIN-SUFFIX,ajax.aspnetcdn.com
 #DOMAIN-SUFFIX,ajax.cloudflare.com
@@ -415,7 +356,6 @@ DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,jiasule.com
 DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,upaiyun.com
-
 
 
 # AccelerateDirectSites
