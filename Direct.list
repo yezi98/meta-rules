@@ -28,7 +28,7 @@ IP-CIDR,50.118.166.152/24,no-resolve
 #IP-CIDR,50.118.166.239/32,no-resolve
 IP-CIDR,50.118.167.114/24,no-resolve
 #IP-CIDR,50.118.166.241/32,no-resolve
-IP-CIDR,45.38.56.65/24,no-resolve
+IP-CIDR,45.38.32.0/19,no-resolve
 DOMAIN-SUFFIX,api.cx.metamask.io
 DOMAIN-SUFFIX,getgrass.io
 DOMAIN-KEYWORD,grass
