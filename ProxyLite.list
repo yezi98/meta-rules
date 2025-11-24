@@ -22,6 +22,9 @@ DOMAIN-SUFFIX,mtgglobals.com
 DOMAIN-SUFFIX,dsp-api.moloco.com
 DOMAIN-SUFFIX,adsmoloco.com
 
+# OKEMBY
+DOMAIN-SUFFIX,okemby.org
+
 # chainpredict
 DOMAIN-SUFFIX,chainpredict.com
 DOMAIN-KEYWORD,efsanetr
