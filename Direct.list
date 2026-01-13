@@ -53,3 +53,7 @@ DOMAIN-KEYWORD,octopus
 
 # freecloud.ltd
 DOMAIN-KEYWORD,freecloud
+
+# okemby反代
+DOMAIN-SUFFIX,emby.334455.dpdns.org
+DOMAIN-SUFFIX,emby.yezi.qzz.io
