@@ -55,8 +55,8 @@ DOMAIN-KEYWORD,octopus
 DOMAIN-KEYWORD,freecloud
 
 # okemby反代
-DOMAIN-SUFFIX,emby.334455.dpdns.org
-DOMAIN-SUFFIX,emby.yezi.qzz.io
-DOMAIN-SUFFIX,okemby.cf8.us.ci
-DOMAIN-SUFFIX,ok.ceo.pp.ua
-DOMAIN-SUFFIX,ok.f2f.pp.ua
+#DOMAIN-SUFFIX,emby.334455.dpdns.org
+#DOMAIN-SUFFIX,emby.yezi.qzz.io
+#DOMAIN-SUFFIX,okemby.cf8.us.ci
+#DOMAIN-SUFFIX,ok.ceo.pp.ua
+#DOMAIN-SUFFIX,ok.f2f.pp.ua
