@@ -22,8 +22,9 @@ DOMAIN-SUFFIX,mtgglobals.com
 DOMAIN-SUFFIX,dsp-api.moloco.com
 DOMAIN-SUFFIX,adsmoloco.com
 
-# OKEMBY
+# OKEMBY，HKA emby
 DOMAIN-SUFFIX,okemby.org
+DOMAIN-SUFFIX,hka-emby.aliz.work
 
 # okemby反代
 DOMAIN-SUFFIX,emby.334455.dpdns.org
