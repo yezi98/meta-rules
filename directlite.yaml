@@ -1,0 +1,25 @@
+payload:
+  - DOMAIN-SUFFIX,time.windows.com
+  - DOMAIN-SUFFIX,lanzov.com
+  - DOMAIN-SUFFIX,hao123.com
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,dns.msftncsi.com
+  - DOMAIN-SUFFIX,ipv6.msftconnecttest.com
+  - DOMAIN-KEYWORD,mirror
+  - DOMAIN-KEYWORD,ghp
+  - DOMAIN-KEYWORD,lastwar
+  - IP-CIDR,50.118.166.152/24,no-resolve
+  - IP-CIDR,50.118.167.114/24,no-resolve
+  - IP-CIDR,45.38.32.0/19,no-resolve
+  - DOMAIN-SUFFIX,api.cx.metamask.io
+  - DOMAIN-SUFFIX,getgrass.io
+  - DOMAIN-KEYWORD,grass
+  - DOMAIN-SUFFIX,ljhsnzpc.com
+  - DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
+  - DOMAIN-SUFFIX,aleo.us.kg
+  - DOMAIN-KEYWORD,nvidia
+  - DOMAIN-KEYWORD,octopus
+  - DOMAIN-KEYWORD,freecloud
+  - DOMAIN-SUFFIX,bcddef.xyz
+  - DOMAIN-SUFFIX,bdzybf22.com
+  - DOMAIN-SUFFIX,ghfast.top
