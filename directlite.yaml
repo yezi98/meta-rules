@@ -15,7 +15,7 @@ payload:
   - DOMAIN-SUFFIX,getgrass.io
   - DOMAIN-KEYWORD,grass
   - DOMAIN-SUFFIX,ljhsnzpc.com
-  - DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
+  #- DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
   - DOMAIN-SUFFIX,aleo.us.kg
   - DOMAIN-KEYWORD,nvidia
   - DOMAIN-KEYWORD,octopus
