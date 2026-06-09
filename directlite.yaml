@@ -18,7 +18,7 @@ payload:
   #- DOMAIN-SUFFIX,aliyun.yezicloud.eu.org
   - DOMAIN-SUFFIX,aleo.us.kg
   - DOMAIN-KEYWORD,nvidia
-  - DOMAIN-KEYWORD,octopus
+  #- DOMAIN-KEYWORD,octopus
   - DOMAIN-KEYWORD,freecloud
   - DOMAIN-SUFFIX,bcddef.xyz
   - DOMAIN-SUFFIX,bdzybf22.com
