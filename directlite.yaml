@@ -61,3 +61,4 @@ payload:
   - DOMAIN-SUFFIX,riskified.com
   - DOMAIN-SUFFIX,cloudfront.net
   - DOMAIN-KEYWORD,workbuddy
+  - DOMAIN-KEYWORD,tgalileo
