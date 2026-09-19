@@ -7,7 +7,6 @@ payload:
   - DOMAIN-SUFFIX,ipv6.msftconnecttest.com
   - DOMAIN-KEYWORD,mirror
   - DOMAIN-KEYWORD,ghp
-  - DOMAIN-KEYWORD,lastwar
   - IP-CIDR,50.118.166.152/24,no-resolve
   - IP-CIDR,50.118.167.114/24,no-resolve
   - IP-CIDR,45.38.32.0/19,no-resolve
