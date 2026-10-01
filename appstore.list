@@ -1,0 +1,46 @@
+# ────────────────────────────────────────────────────────────
+# App Store 域名规则集  (yezi98/meta-rules / appstore.list)
+#
+# nikki 侧配置（用 <<: *class，锚点默认 format: text，无需额外指定）：
+#   rule-providers:
+#     appstore_domain: { <<: *class, url: "https://raw.githubusercontent.com/yezi98/meta-rules/refs/heads/main/appstore.list", path: "./ruleset/appstore.list"}
+#   rules:
+#     - RULE-SET,appstore_domain,🛒 App Store
+#
+# ★ 目标组(🛒 App Store)由 RULE-SET 那一行决定，本文件【不写】目标，
+#   所以在这里增删域名不会误改出口。
+#
+# ★ 位置要求：RULE-SET,appstore_domain 那行必须排在
+#     ① IP-CIDR,17.0.0.0/8   ② RULE-SET,geolocation-!cn
+#   之前，否则会被抢先命中 → 同一个 Apple ID 一半走中国一半走海外
+#   → App Store 报「无法连接」且时好时坏。
+#
+# ★ 为什么不用官方 apple.mrs：远程第三方文件改不了、整桶只送一个组、
+#   且它在 17.0.0.0/8 之后会被抢先命中。
+# ────────────────────────────────────────────────────────────
+
+# ── 浏览 / 搜索 / 页面 ──
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN,itunes.apple.com
+
+# ── 下载 / 购买 ──
+DOMAIN-SUFFIX,iosapps.itunes.apple.com
+DOMAIN-SUFFIX,buy.itunes.apple.com
+
+# ── Apple ID 认证 ──
+DOMAIN-SUFFIX,auth.itunes.apple.com
+DOMAIN-SUFFIX,amp-account.itunes.apple.com
+DOMAIN-SUFFIX,gsa.apple.com
+DOMAIN-SUFFIX,gsas.apple.com
+DOMAIN-SUFFIX,identity.ess.apple.com
+
+# ── 商店支撑 ──
+DOMAIN-SUFFIX,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,se-edge.itunes.apple.com
+DOMAIN-SUFFIX,client-api.itunes.apple.com
+DOMAIN-SUFFIX,tdms.apple.com
+
+# ── Akamai 别名（官方 apple.mrs 里没有，必须自己列）──
+DOMAIN-SUFFIX,mzstorekit.lb-apple.com.akadns.net
+DOMAIN-SUFFIX,gsa.idms-apple.com.akadns.net
+DOMAIN-SUFFIX,uts-api-cdn.itunes-apple.com.akadns.net
