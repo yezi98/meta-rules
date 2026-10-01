@@ -1,7 +1,9 @@
 # ────────────────────────────────────────────────────────────
-# App Store 域名规则集  (yezi98/meta-rules / appstore.list)
+# App Store 域名规则集  (yezi98/meta-rules / appstore.list)  —— v2
 #
-# nikki 侧配置（用 <<: *class，锚点默认 format: text，无需额外指定）：
+# v2 修正：buy 那条改用 DOMAIN-KEYWORD（原 DOMAIN-SUFFIX 匹配不到 p47/p57/p60-buy）
+#
+# nikki 侧配置（<<: *class 锚点默认 format: text，无需额外指定）：
 #   rule-providers:
 #     appstore_domain: { <<: *class, url: "https://raw.githubusercontent.com/yezi98/meta-rules/refs/heads/main/appstore.list", path: "./ruleset/appstore.list"}
 #   rules:
@@ -14,9 +16,6 @@
 #     ① IP-CIDR,17.0.0.0/8   ② RULE-SET,geolocation-!cn
 #   之前，否则会被抢先命中 → 同一个 Apple ID 一半走中国一半走海外
 #   → App Store 报「无法连接」且时好时坏。
-#
-# ★ 为什么不用官方 apple.mrs：远程第三方文件改不了、整桶只送一个组、
-#   且它在 17.0.0.0/8 之后会被抢先命中。
 # ────────────────────────────────────────────────────────────
 
 # ── 浏览 / 搜索 / 页面 ──
@@ -25,7 +24,12 @@ DOMAIN,itunes.apple.com
 
 # ── 下载 / 购买 ──
 DOMAIN-SUFFIX,iosapps.itunes.apple.com
-DOMAIN-SUFFIX,buy.itunes.apple.com
+# ⚠️ 必须用 DOMAIN-KEYWORD，不能用 DOMAIN-SUFFIX：
+#    p47-buy / p57-buy / p60-buy 与 buy 是【平级】子域（都挂在 itunes.apple.com 下），
+#    并不是 buy.itunes.apple.com 的下级。DOMAIN-SUFFIX 按域名层级匹配（要求前面是点），
+#    实测匹配不到 → 这些购买下载端点全部漏走直连。
+#    DOMAIN-KEYWORD 是子串匹配，一次覆盖 buy / p*-buy / speedybuy 全部端点。
+DOMAIN-KEYWORD,buy.itunes.apple.com
 
 # ── Apple ID 认证 ──
 DOMAIN-SUFFIX,auth.itunes.apple.com
