@@ -1,0 +1,48 @@
+# NAME: whatsapp_media
+# DESC: WhatsApp 媒体 / 大文件通道 → 策略组「💬 WhatsApp媒体」
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，替代配置文件里散落的媒体 CDN 规则。
+#
+# ⚠️ 本文件【必须排在 whatsapp.list 之前】：
+#      - RULE-SET,whatsapp_media,💬 WhatsApp媒体   ← 先（本文件）
+#      - RULE-SET,whatsapp,💬 WhatsApp             ← 后
+#    因为 whatsapp.list 里的 DOMAIN-SUFFIX,whatsapp.net 会吃掉下面的媒体子域。
+#
+# 维护（改完在路由器上热更新，【不用重启 nikki】）：
+#   curl -X PUT -H "Authorization: Bearer <secret>" \
+#        http://127.0.0.1:9090/providers/rules/whatsapp_media
+#   返回 204 即生效；不手动更新也会 24h 内自动拉取。
+#
+# 出口：💬 WhatsApp媒体（select）当前钉在 🇸🇬 新加坡自动 ——
+#       媒体是大文件传输，对 RTT + 吞吐都敏感（实测新加坡 23ms / 上传 1342 KB/s，三项全胜）。
+
+# ── WhatsApp 自家媒体 CDN ──
+# 实测出现过：media-<区>.cdn.whatsapp.net（sjc3/lax3/xxc1/sjc6/det1/ams2）、chat.cdn.whatsapp.net
+#             → 全部由 cdn.whatsapp.net 覆盖
+#             mmg / scontent / static / pps .whatsapp.net
+DOMAIN-SUFFIX,cdn.whatsapp.net
+DOMAIN-SUFFIX,mmg.whatsapp.net
+DOMAIN-SUFFIX,scontent.whatsapp.net
+DOMAIN-SUFFIX,static.whatsapp.net
+DOMAIN-SUFFIX,pps.whatsapp.net
+
+# ── Meta 媒体 CDN ──
+# 发图片/视频/语音走这里，不是 whatsapp.net：
+#   lookaside.fbsbx.com  实测 1.71s（改前）→ 0.17s
+#   static.xx.fbcdn.net  实测 0.68s（改前）→ 0.29s
+# 注：fbcdn.net / fbsbx.com 同时服务 Facebook / Instagram 图片，一并受益，无副作用。
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+
+# ── GIF / 表情贴图源 ──
+# 不是 Meta 的 CDN，所以 MetaCubeX 的 whatsapp.list 里【没有】这些，
+# 此前零规则覆盖 → 掉 MATCH → 🐟 漏网之鱼（4 层嵌套绕美国）→ 报「无法下载 gif，请重试」。
+#   media0~4.giphy.com / media.giphy.com  实测 13+ 次命中
+#   tenor.com 是另一家 GIF 源（Google），当前零命中，一并收编防将来踩坑。
+DOMAIN-SUFFIX,giphy.com
+DOMAIN-SUFFIX,tenor.com
+
+# ── 已知盲区（按需补充）──
+# 日志里出现过 1 次 media-mct.whatsapp.net（不在 cdn 子域下），
+# 若日后频繁出现同类 media-*.whatsapp.net 主机，在此逐条补：
+# DOMAIN-SUFFIX,media-mct.whatsapp.net

@@ -1,0 +1,39 @@
+# NAME: whatsapp
+# DESC: WhatsApp 消息 / 实时通道 → 策略组「💬 WhatsApp」
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，替代配置文件里散落的 DOMAIN-SUFFIX 规则。
+#
+# ⚠️ 必须与 whatsapp_media.list 配对使用，且【本文件排在它之后】：
+#      - RULE-SET,whatsapp_media,💬 WhatsApp媒体   ← 先
+#      - RULE-SET,whatsapp,💬 WhatsApp             ← 后
+#    原因：下面的 DOMAIN-SUFFIX,whatsapp.net 是宽匹配，会吃掉媒体子域
+#    （cdn/mmg/static/scontent/pps.whatsapp.net），所以媒体必须在前。
+#
+# 维护（改完在路由器上热更新，【不用重启 nikki】）：
+#   curl -X PUT -H "Authorization: Bearer <secret>" \
+#        http://127.0.0.1:9090/providers/rules/whatsapp
+#   返回 204 即生效；不手动更新也会 24h 内自动拉取。
+#
+# 出口：💬 WhatsApp（select）当前钉在 🌎️ 自建TCP —— 消息是小包长连接，
+#       对 RTT 不敏感、但对"链路是否被 QoS"敏感，所以避开 UDP 原生节点。
+
+# ── 主域：宽匹配即可覆盖全部实测端点 ──
+# 实测出现过：api / v / g(:5222) / e1 / e14 / dit / crashlogs / dns / a.ns .whatsapp.net
+#             web / graph / faq .whatsapp.com、wa.me
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,wa.me
+
+# ── 品牌其余顶级域 ──
+# 取自 MetaCubeX geosite/whatsapp.list（共 13 条），当前日志零命中，防将来踩坑。
+DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,whatsapp.cc
+DOMAIN-SUFFIX,whatsapp.info
+DOMAIN-SUFFIX,whatsapp.org
+DOMAIN-SUFFIX,whatsapp.tv
+DOMAIN-SUFFIX,whatsappbrand.com
+
+# ── WhatsApp Business / Plus ──
+DOMAIN-SUFFIX,whatsapp-plus.info
+DOMAIN-SUFFIX,whatsapp-plus.me
+DOMAIN-SUFFIX,whatsapp-plus.net
