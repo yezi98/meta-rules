@@ -1,0 +1,29 @@
+# NAME: talkatone
+# DESC: Talkatone 美国虚拟网络电话专线规则集
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🇺🇲 Talkatone」(美国家宽)
+# 维护: 在 GitHub 修改本文件后，路由器执行 curl 热更新即可生效，无需重启 nikki：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://127.0.0.1:9090/providers/rules/talkatone
+
+# ── 1. 核心信令与负载均衡长连接 (XMPP 端口 5222 / 443) ──
+# 涵盖华盛顿 lb-iad-01、圣何塞 xmpp-sjc-*、relay-sjc-* 等集群
+DOMAIN-SUFFIX,tktn.be
+
+# ── 2. 专有 HTTP 鉴权与登录网关 ──
+# Talkatone HTTP Server 核心登录握手
+DOMAIN-SUFFIX,tktn.at
+
+# ── 3. 官方 API、推送与语音信箱服务 ──
+# 涵盖 mobile.talkatone.com、vm.talkatone.com、api.talkatone.com
+DOMAIN-SUFFIX,talkatone.com
+
+# ── 4. 关键字兜底防漏网 ──
+DOMAIN-KEYWORD,talkatone
+DOMAIN-KEYWORD,tktn
+
+# ── 5. 通话语音媒体流 (RTP/VoIP) 官方自主 IP 网段 ──
+IP-CIDR,205.164.56.0/24,no-resolve
+IP-CIDR,216.172.154.0/24,no-resolve
+IP-CIDR,50.117.27.0/24,no-resolve
+IP-CIDR,63.251.124.0/24,no-resolve
+IP-CIDR,69.46.75.0/24,no-resolve
