@@ -1,0 +1,35 @@
+# NAME: chiefgroup
+# DESC: 香港致富证券 / 致富金融 / 致富通 (Top Trader) 专属规则集
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🇭🇰 香港金融证券」
+# 维护: 在 GitHub 修改本文件后，路由器执行 curl 热更新即可生效，无需重启 nikki：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://127.0.0.1:9090/providers/rules/chiefgroup_domain
+
+# ── 1. 致富集团香港官方网站与主服务 ──
+# 涵盖官网 www、网页行情 quote、新股 IPO ipo-h5、客户服务 service 等
+DOMAIN-SUFFIX,chiefgroup.com.hk
+
+# ── 2. 致富通 Top Trader 核心移动交易与实时行情系统 ──
+# 涵盖 quote.toptrader1979.com、api2.toptrader1979.com、cdn.toptrader1979.com 等
+DOMAIN-SUFFIX,toptrader1979.com
+
+# ── 3. CM-ChiefGroup 致富移动端专属 API 与多活网关 ──
+# 涵盖 quote.cm-chiefgroup.com、api2.cm-chiefgroup.com、cdn.cm-chiefgroup.com 等
+DOMAIN-SUFFIX,cm-chiefgroup.com
+
+# ── 4. ChiefTrader 备用极速交易网关 ──
+# 涵盖 quote.chieftrader1979.com、api2.chieftrader1979.com 等
+DOMAIN-SUFFIX,chieftrader1979.com
+
+# ── 5. 出入金、资金存管鉴权与安全结算系统 ──
+# 涵盖 chief-deposit.cg1979.com、chief-deposit.zft2000.com、chief-deposit.zft2025.com
+DOMAIN-SUFFIX,cg1979.com
+DOMAIN-SUFFIX,zft2000.com
+DOMAIN-SUFFIX,zft2025.com
+
+# ── 6. 致富证券海外在线客服网关 ──
+DOMAIN,chiefgroup.udeskglobal.com
+
+# ── 7. 关键字全域防漏网 ──
+DOMAIN-KEYWORD,chiefgroup
+DOMAIN-KEYWORD,toptrader1979
