@@ -1,9 +1,9 @@
 # NAME: chiefgroup
-# DESC: 香港致富证券 / 致富金融 / 致富通 (Top Trader) 专属规则集
+# DESC: 香港致富证券 / 致富金融 / 致富通 (Top Trader) 专属全量分流规则集
 # REPO: https://github.com/yezi98/meta-rules
 # 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🇭🇰 香港金融证券」
 # 维护: 在 GitHub 修改本文件后，路由器执行 curl 热更新即可生效，无需重启 nikki：
-#       curl -X PUT -H "Authorization: Bearer 653527" http://127.0.0.1:9090/providers/rules/chiefgroup_domain
+#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/chiefgroup_domain
 
 # ── 1. 致富集团香港官方网站与主服务 ──
 # 涵盖官网 www、网页行情 quote、新股 IPO ipo-h5、客户服务 service 等
@@ -27,25 +27,42 @@ DOMAIN-SUFFIX,cg1979.com
 DOMAIN-SUFFIX,zft2000.com
 DOMAIN-SUFFIX,zft2025.com
 
-# ── 6. 致富证券海外在线客服网关 ──
+# ── 6. 致富证券海外在线客服与移动端归因服务 ──
 DOMAIN,chiefgroup.udeskglobal.com
+DOMAIN,zftksc.cdn-settings.appsflyersdk.com
+DOMAIN,zftksc.launches.appsflyersdk.com
 
-# ── 7. 关键字全域防漏网 ──
+# ── 7. 致富通移动端海外推送通道 (EngageLab 香港集群，保障行情预警与成交即时通知) ──
+DOMAIN-SUFFIX,theengagelab.com
+DOMAIN-SUFFIX,engage7.com
+DOMAIN-SUFFIX,engageforce.net
+
+# ── 8. 致富通海外 APM 性能监控与行为埋点 SDK (防止被 cn_domain 抢答直连导致超时) ──
+DOMAIN-SUFFIX,ap-southeast-1.volces.com
+
+# ── 9. 关键字全域防漏网 ──
 DOMAIN-KEYWORD,chiefgroup
 DOMAIN-KEYWORD,toptrader1979
 
-# ── 8. 致富通 Top Trader 官方专属机房与极速行情推送 IP (带 no-resolve 裸 IP 直通) ──
+# ── 10. 致富通 Top Trader 官方专属机房与极速行情推送 IP (带 no-resolve 裸 IP 直通) ──
 # 华为云香港金融机房 (端口 3000/3001 极速行情与交易推送，现场 conntrack 活跃捕获)
 IP-CIDR,189.1.244.101/32,no-resolve
 IP-CIDR,183.87.34.6/32,no-resolve
-IP-CIDR,189.1.240.0/20,no-resolve
+IP-CIDR,189.1.224.0/19,no-resolve
 IP-CIDR,183.87.32.0/20,no-resolve
 
-# 致富官方 PCCW/HKT 自主持有机房专线 IP (Org: Chief Commodities Limited)
+# 致富官方 PCCW/HKT 自主持有机房专线 (APNIC 官方注册实体 CHIEFCOM-HK: 113.28.95.32 - 113.28.95.47)
+IP-CIDR,113.28.95.32/28,no-resolve
 IP-CIDR,113.28.95.37/32,no-resolve
 IP-CIDR,210.177.22.226/32,no-resolve
 
-# 致富移动端 API 与多活专用香港节点 (腾讯云香港 / 阿里云香港)
+# 致富移动端核心多活服务：Zenlayer 香港金融机房专线 (实测 service/ipo-h5/deposit 节点)
+IP-CIDR,45.40.59.89/32,no-resolve
+IP-CIDR,128.14.67.98/32,no-resolve
+IP-CIDR,129.227.155.166/32,no-resolve
+IP-CIDR,129.227.153.147/32,no-resolve
+
+# 致富移动端 API 与多活专用香港节点 (腾讯云香港 / 阿里云香港 / Metaverse)
 IP-CIDR,156.59.91.61/32,no-resolve
 IP-CIDR,156.59.125.50/32,no-resolve
 IP-CIDR,156.59.152.220/32,no-resolve
