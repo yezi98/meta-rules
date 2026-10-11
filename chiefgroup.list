@@ -33,3 +33,21 @@ DOMAIN,chiefgroup.udeskglobal.com
 # ── 7. 关键字全域防漏网 ──
 DOMAIN-KEYWORD,chiefgroup
 DOMAIN-KEYWORD,toptrader1979
+
+# ── 8. 致富通 Top Trader 官方专属机房与极速行情推送 IP (带 no-resolve 裸 IP 直通) ──
+# 华为云香港金融机房 (端口 3000/3001 极速行情与交易推送，现场 conntrack 活跃捕获)
+IP-CIDR,189.1.244.101/32,no-resolve
+IP-CIDR,183.87.34.6/32,no-resolve
+IP-CIDR,189.1.240.0/20,no-resolve
+IP-CIDR,183.87.32.0/20,no-resolve
+
+# 致富官方 PCCW/HKT 自主持有机房专线 IP (Org: Chief Commodities Limited)
+IP-CIDR,113.28.95.37/32,no-resolve
+IP-CIDR,210.177.22.226/32,no-resolve
+
+# 致富移动端 API 与多活专用香港节点 (腾讯云香港 / 阿里云香港)
+IP-CIDR,156.59.91.61/32,no-resolve
+IP-CIDR,156.59.125.50/32,no-resolve
+IP-CIDR,156.59.152.220/32,no-resolve
+IP-CIDR,47.57.3.126/32,no-resolve
+IP-CIDR,138.113.30.125/32,no-resolve
