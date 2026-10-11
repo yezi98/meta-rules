@@ -27,25 +27,31 @@ DOMAIN-SUFFIX,cg1979.com
 DOMAIN-SUFFIX,zft2000.com
 DOMAIN-SUFFIX,zft2025.com
 
-# ── 6. 致富证券海外在线客服与移动端归因服务 ──
+# ── 6. 致富证券海外在线客服网关 ──
 DOMAIN,chiefgroup.udeskglobal.com
-DOMAIN,zftksc.cdn-settings.appsflyersdk.com
-DOMAIN,zftksc.launches.appsflyersdk.com
 
-# ── 7. 致富通移动端海外推送通道 (EngageLab 香港集群，保障行情预警与成交即时通知) ──
+# ── 7. 致富通移动端归因与数据统计 SDK (包含 AppsFlyer 动态子域与 Singular iOS MMP) ──
+DOMAIN-SUFFIX,appsflyersdk.com
+DOMAIN-SUFFIX,singular.net
+
+# ── 8. 致富通移动端海外推送通道 (EngageLab 香港集群，保障行情预警与成交即时通知) ──
+DOMAIN-SUFFIX,engagelab.com
 DOMAIN-SUFFIX,theengagelab.com
 DOMAIN-SUFFIX,engage7.com
 DOMAIN-SUFFIX,engageforce.net
 
-# ── 8. 致富通海外 APM 性能监控与行为埋点 SDK (防止被 cn_domain 抢答直连导致超时) ──
+# ── 9. 致富通海外 APM 性能监控与行为埋点 SDK (防止被 cn_domain 抢答直连导致超时) ──
 DOMAIN-SUFFIX,ap-southeast-1.volces.com
 
-# ── 9. 关键字全域防漏网 ──
+# ── 10. 金融 App 落地定位校准接口 ──
+DOMAIN,ipapi.co
+
+# ── 11. 关键字全域防漏网 ──
 DOMAIN-KEYWORD,chiefgroup
 DOMAIN-KEYWORD,toptrader1979
 
-# ── 10. 致富通 Top Trader 官方专属机房与极速行情推送 IP (带 no-resolve 裸 IP 直通) ──
-# 华为云香港金融机房 (端口 3000/3001 极速行情与交易推送，现场 conntrack 活跃捕获)
+# ── 12. 致富通 Top Trader 官方专属机房与极速行情推送 IP (带 no-resolve 裸 IP 直通) ──
+# 华为云香港金融机房 (端口 3000/3001/19000 极速行情与交易推送，现场 conntrack 活跃捕获)
 IP-CIDR,189.1.244.101/32,no-resolve
 IP-CIDR,183.87.34.6/32,no-resolve
 IP-CIDR,189.1.224.0/19,no-resolve
@@ -61,6 +67,15 @@ IP-CIDR,45.40.59.89/32,no-resolve
 IP-CIDR,128.14.67.98/32,no-resolve
 IP-CIDR,129.227.155.166/32,no-resolve
 IP-CIDR,129.227.153.147/32,no-resolve
+
+# 腾讯云香港 / 亚太金融网关 (Aceville / Tencent Cloud HK，现场活跃直连捕获)
+IP-CIDR,101.32.65.244/32,no-resolve
+IP-CIDR,101.32.65.0/24,no-resolve
+IP-CIDR,43.162.222.168/32,no-resolve
+IP-CIDR,43.162.222.125/32,no-resolve
+IP-CIDR,43.162.222.0/24,no-resolve
+IP-CIDR,43.128.254.50/32,no-resolve
+IP-CIDR,43.128.254.0/24,no-resolve
 
 # 致富移动端 API 与多活专用香港节点 (腾讯云香港 / 阿里云香港 / Metaverse)
 IP-CIDR,156.59.91.61/32,no-resolve
