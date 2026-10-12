@@ -1,7 +1,7 @@
 # NAME: Crypto
 # DESC: 加密货币交易所 (CEX)、去中心化金融 (DeFi)、Web3、钱包、链上数据与加密出入金专属全量分流规则集
 # REPO: https://github.com/yezi98/meta-rules
-# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🪙 Crypto / Wise」策略组（严选台湾 WARP 极净出口）
+# 用途: 供 nikki(mihomo) 以 RULE-SET (behavior: classical) 引用，出口定向至「🪙 Crypto / Wise」策略组（严选台湾 WARP 极净出口）
 # 维护: 在 GitHub 直接编辑本文件提交后，在局域网终端执行下方命令（或面板点更新），即可秒级热更新生效，无需重启旁路由：
 #       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/crypto_user
 
@@ -10,136 +10,145 @@
 # =========================================================================
 # ── 1. 币安国际官方主站、API 接口、静态 CDN 与内容网络 ──
 # 币安国际官方主站
-+.binance.com
+DOMAIN-SUFFIX,binance.com
 # 币安国际备用主域名
-+.binance.co
+DOMAIN-SUFFIX,binance.co
 # 币安官方备用域名
-+.binance.cc
+DOMAIN-SUFFIX,binance.cc
 # 币安官方资讯与数据平台
-+.binance.info
+DOMAIN-SUFFIX,binance.info
 # 币安移动端备用服务域名
-+.binance.me
+DOMAIN-SUFFIX,binance.me
 # 币安官方网络基础设施域名
-+.binance.net
+DOMAIN-SUFFIX,binance.net
 # BNB Chain (币安智能链) 官方主站
-+.binance.org
+DOMAIN-SUFFIX,binance.org
 # 币安美国独立合规交易所 (防止误入美区)
-+.binance.us
+DOMAIN-SUFFIX,binance.us
 # 币安官方 API 开发者文档与测试网
-+.binance.vision
+DOMAIN-SUFFIX,binance.vision
 # 币安官方核心 API 数据接口
-+.binanceapi.com
+DOMAIN-SUFFIX,binanceapi.com
 # 币安静态资源与内容分发加速通道
-+.binancecnt.com
+DOMAIN-SUFFIX,binancecnt.com
 # 币安官方核心图片与静态资产 CDN 网关
-+.bnbstatic.com
+DOMAIN-SUFFIX,bnbstatic.com
 # 币安移动端链路追踪与设备安全风控网关
-+.bntrace.com
+DOMAIN-SUFFIX,bntrace.com
 
 # ── 2. 币安官方多区域与国内动态防封镜像域名 ──
 # 币安中文区主备用镜像站
-+.binancezh.com
+DOMAIN-SUFFIX,binancezh.com
 # 币安中文区快捷跳转域名
-+.binancezh.co
+DOMAIN-SUFFIX,binancezh.co
 # 币安中文区多活服务域名
-+.binancezh.cc
+DOMAIN-SUFFIX,binancezh.cc
 # 币安中文区资讯与公告镜像
-+.binancezh.info
+DOMAIN-SUFFIX,binancezh.info
 # 币安中文区动态备用域名
-+.binancezh.ink
+DOMAIN-SUFFIX,binancezh.ink
 # 币安中文区高可用防封中继
-+.binancezh.kim
+DOMAIN-SUFFIX,binancezh.kim
 # 币安官方分享与推广重定向通道
-+.binancezh.link
+DOMAIN-SUFFIX,binancezh.link
 # 币安中文区实时行情镜像
-+.binancezh.live
+DOMAIN-SUFFIX,binancezh.live
 # 币安移动端专用备用域名
-+.binancezh.mobi
+DOMAIN-SUFFIX,binancezh.mobi
 # 币安中文区网络备份中继
-+.binancezh.net
+DOMAIN-SUFFIX,binancezh.net
 # 币安专业版交易界面镜像
-+.binancezh.pro
+DOMAIN-SUFFIX,binancezh.pro
 # 币安动态防封安全解析中继
-+.binancezh.sh
+DOMAIN-SUFFIX,binancezh.sh
 # 币安多活容灾备用域名
-+.binancezh.top
+DOMAIN-SUFFIX,binancezh.top
 # 币安欧洲区域备用镜像
-+.binancezh.be
+DOMAIN-SUFFIX,binancezh.be
 # 币安企业与机构备用通道
-+.binancezh.biz
+DOMAIN-SUFFIX,binancezh.biz
 
 # ── 3. 币安云平台、慈善与底层交易所 SaaS 架构 ──
 # 币安云 (Binance Cloud) 交易所基础设施服务
-+.binance.cloud
+DOMAIN-SUFFIX,binance.cloud
 # 币安慈善基金会官方平台
-+.binance.charity
+DOMAIN-SUFFIX,binance.charity
 # 币安云托管交易所核心 SaaS 撮合服务
-+.saasexch.com
+DOMAIN-SUFFIX,saasexch.com
 # 币安云托管交易所 Web 端与 API 网关
-+.saasexch.io
+DOMAIN-SUFFIX,saasexch.io
 # 币安云托管交易所 API 接口扩展网关
-+.saasexch.info
+DOMAIN-SUFFIX,saasexch.info
 # 币安移动端专用动态 Webview、H5 离线包与活动前端防封域名
-+.bnappweb.blue
-+.bnappweb.com
-+.bnappweb.net
+DOMAIN-SUFFIX,bnappweb.blue
+DOMAIN-SUFFIX,bnappweb.com
+DOMAIN-SUFFIX,bnappweb.net
 
 # ── 4. 币安移动端专属错误追踪、崩溃诊断与合规探测网关 ──
 # 币安专属 Sentry 错误追踪与诊断上报 (组织代码 o529943)
-o529943.ingest.sentry.io
+DOMAIN,o529943.ingest.sentry.io
 # 币安专属 Sentry 美区诊断上报
-o529943.ingest.us.sentry.io
+DOMAIN,o529943.ingest.us.sentry.io
 # 币安官方 OneTrust 地理位置探测 (防止掉入美西导致美国合规弹窗与清退)
-geolocation.onetrust.com
+DOMAIN,geolocation.onetrust.com
 # 币安官方 OneTrust Cookie 合规管理 SDK
-cdn.cookielaw.org
+DOMAIN,cdn.cookielaw.org
 # 币安官方前端 AWS WAF 人机验证与安全令牌网关
-+.token.awswaf.com
+DOMAIN-SUFFIX,token.awswaf.com
 
 # ── 5. 币安移动端启动引导、动态域名下发与核心防封轮换网络 ──
 # 币安官方移动端启动引导与动态配置分发中心 (dynamic-config.json)
-d3sknckuh1o9tg.cloudfront.net
+DOMAIN,d3sknckuh1o9tg.cloudfront.net
 # 币安云托管交易所跨域共享 API 网关
-+.saasexch.co
+DOMAIN-SUFFIX,saasexch.co
 # 币安中文端专属动态多活与防封主域名
-+.bnappzh.co
+DOMAIN-SUFFIX,bnappzh.co
 # 币安官方动态防封轮换镜像与中继
-+.yshxxy.com
-+.golvv.net
+DOMAIN-SUFFIX,yshxxy.com
+DOMAIN-SUFFIX,golvv.net
 # 币安移动端备用动态 Webview 轮换域名 (Mokex 架构)
-+.mokexapp.cz
-+.mokexapp.info
-+.mokexapp.io
-+.mokexapp.me
-+.mokexapp.net
-+.mokexapp.org
-+.mokexapp.tv
-+.mokexapp.us
-+.mokexweb.org
-+.mokexweb.tv
-+.mokexweb.us
+DOMAIN-SUFFIX,mokexapp.cz
+DOMAIN-SUFFIX,mokexapp.info
+DOMAIN-SUFFIX,mokexapp.io
+DOMAIN-SUFFIX,mokexapp.me
+DOMAIN-SUFFIX,mokexapp.net
+DOMAIN-SUFFIX,mokexapp.org
+DOMAIN-SUFFIX,mokexapp.tv
+DOMAIN-SUFFIX,mokexapp.us
+DOMAIN-SUFFIX,mokexweb.org
+DOMAIN-SUFFIX,mokexweb.tv
+DOMAIN-SUFFIX,mokexweb.us
 
 
 # =========================================================================
+# ── 6. 币安官方核心撮合网关与链路追踪风控直连 IP (带 no-resolve 裸 IP 专线) ──
+# 币安官方 saasexch 核心撮合网关 AWS 东京直连节点 (现场实测抓包捕获)
+IP-CIDR,52.198.187.114/32,no-resolve
+# 币安官方 bntrace 设备链路追踪风控网关 AWS 东京直连节点 A (现场实测抓包捕获)
+IP-CIDR,18.180.191.237/32,no-resolve
+# 币安官方 bntrace 设备链路追踪风控网关 AWS 东京直连节点 B (现场实测抓包捕获)
+IP-CIDR,57.180.143.38/32,no-resolve
+
+
 # 二、 欧易 (OKX / OKEx) 官方生态与解析网关集群
 # =========================================================================
 # ── 1. 欧易官方主站、历史域名与 Web3 浏览器 ──
 # 欧易 OKX 国际官方主站与交易核心
-+.okx.com
+DOMAIN-SUFFIX,okx.com
 # 欧易历史主域名 (旧版兼容重定向通道)
-+.okex.com
+DOMAIN-SUFFIX,okex.com
 # 欧科云链多链区块链浏览器与数据看板
-+.oklink.com
+DOMAIN-SUFFIX,oklink.com
 # 欧易移动端高可用备用镜像与快捷防封域名
-+.okx.cab
+DOMAIN-SUFFIX,okx.cab
 
 # ── 2. 欧易移动端海外 Clean DNS 调度与防封解析网关 ──
 # 欧易核心动态 DNS 防封调度网关
-+.okx-dns.com
+DOMAIN-SUFFIX,okx-dns.com
 # 欧易备用 DNS 解析服务 1
-+.okx-dns1.com
+DOMAIN-SUFFIX,okx-dns1.com
 # 欧易备用 DNS 解析服务 2
-+.okx-dns2.com
+DOMAIN-SUFFIX,okx-dns2.com
 
 
 # =========================================================================
@@ -147,49 +156,49 @@ d3sknckuh1o9tg.cloudfront.net
 # =========================================================================
 # ── 1. Bybit 国际官方主站、全球站与中继线路 ──
 # Bybit 国际官方主站与核心交易中心
-+.bybit.com
+DOMAIN-SUFFIX,bybit.com
 # Bybit 全球站主域名
-+.bybit-global.com
+DOMAIN-SUFFIX,bybit-global.com
 # Bybit 全球备用交易域名
-+.bybitglobal.com
+DOMAIN-SUFFIX,bybitglobal.com
 # Bybit 商业备用中继通道
-+.bybit.biz
+DOMAIN-SUFFIX,bybit.biz
 # Bybit 云端架构与后台服务基础设施
-+.bybit.cloud
+DOMAIN-SUFFIX,bybit.cloud
 
 # ── 2. Bybit 核心交易 API、撮合系统与高频行情推送 ──
 # Bybit 全球核心 RESTful API 接口
-+.byapis.com
+DOMAIN-SUFFIX,byapis.com
 # Bybit 移动端与 Web 静态资源分发网络
-+.byapps.net
+DOMAIN-SUFFIX,byapps.net
 # Bybit 核心撮合与订单状态处理网关
-+.bycsi.com
+DOMAIN-SUFFIX,bycsi.com
 # Bybit 实时 Tick 级高频行情 WebSocket 推送
-+.bytick.com
+DOMAIN-SUFFIX,bytick.com
 
 # ── 3. Bybit 移动端多活容灾与前端加速通道 ──
 # Bybit 客户端业务处理通道
-+.bycbe.com
+DOMAIN-SUFFIX,bycbe.com
 # Bybit 动态前端加速镜像
-+.bymj.io
+DOMAIN-SUFFIX,bymj.io
 # Bybit 移动端动态防封轮换域名 A
-+.byabcde.com
+DOMAIN-SUFFIX,byabcde.com
 # Bybit 移动端动态防封轮换域名 B
-+.bybdc6.com
+DOMAIN-SUFFIX,bybdc6.com
 # Bybit 移动端动态防封轮换域名 C
-+.byd3c3.com
+DOMAIN-SUFFIX,byd3c3.com
 
 # ── 4. Bybit 开发者文档与智能客服系统 ──
 # Bybit 官方 GitHub API 开发者文档托管
-bybit-exchange.github.io
+DOMAIN,bybit-exchange.github.io
 # Bybit 官方 Ada 智能在线客服网关
-bybit.ada.support
+DOMAIN,bybit.ada.support
 
 # ── 5. Bybit 客户端数据埋点、A/B 测试实验与动态遥测网关 ──
 # Bybit 官方前端数据埋点与遥测网关 (涵盖 sc-datasink 与 api 子域)
-+.ffbbbdc6d3c353211fe2ba39c9f744cd.com
+DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
 # Bybit 官方 A/B 测试、灰度发布与前端实验网关 (涵盖 sc-abtest 子域)
-+.ffe390afd658c19dcbf707e0597b846d.de
+DOMAIN-SUFFIX,ffe390afd658c19dcbf707e0597b846d.de
 
 
 # =========================================================================
@@ -197,35 +206,35 @@ bybit.ada.support
 # =========================================================================
 # ── 1. MEXC 官方主站、用户中心、短链与数据埋点 ──
 # MEXC 官方国际主域名，承载官网主站、用户中台与核心 API
-+.mexc.com
+DOMAIN-SUFFIX,mexc.com
 # MEXC 移动端官方短链、应用内活动推广与分享重定向通道
-+.mexc.link
+DOMAIN-SUFFIX,mexc.link
 # MEXC 官方备用域名与移动客户端多活分发中继服务
-+.mexc.me
+DOMAIN-SUFFIX,mexc.me
 # MEXC 客户端数据埋点、APM 性能监控与用户行为分析 SDK 网关
-+.mexcsensors.com
+DOMAIN-SUFFIX,mexcsensors.com
 
 # ── 2. MEXC 核心交易引擎、撮合网关与实时 WebSocket 行情集群 ──
 # MEXC 核心撮合与行情推送系统 (涵盖 pangu 认证网关、appapi 业务接口、ws-app-futures/ws-app-spot 实时推送)
-+.xcoinsystem.com
+DOMAIN-SUFFIX,xcoinsystem.com
 
 # ── 3. MEXC 移动端主力动态防封轮换交易前端与多活网关集群 ──
 # MEXC 移动端主力动态轮换前端 (涵盖 futures 合约、otc 场外交易、wbs 网页视图、prediction 等接口)
-+.greentreeone.com
+DOMAIN-SUFFIX,greentreeone.com
 # MEXC 移动端动态防封备用轮换交易前端与容灾镜像网关
-+.flytogarden.com
+DOMAIN-SUFFIX,flytogarden.com
 # MEXC 深度订单簿、挂单明细与实时盘口推送备用轮换网关
-+.hotbookzone.com
+DOMAIN-SUFFIX,hotbookzone.com
 # MEXC 海外多活紧急容灾线路与备用撮合接入节点
-+.coldbookfly.ru
+DOMAIN-SUFFIX,coldbookfly.ru
 
 # ── 4. MEXC 客户端设备指纹、生物特征安全风控与反作弊鉴权网关 ──
 # MEXC 客户端风控安全网关 (涵盖 watchman 设备指纹、trochi/e 鉴权网关，防止误落美区导致风控封禁)
-+.gotoda.co
+DOMAIN-SUFFIX,gotoda.co
 
 # ── 5. MEXC 移动端前端静态资源、离线包与热更新 CDN 加速网关 ──
 # MEXC 静态资产 CDN 加速网关 (涵盖 static.mocortech.com 币种图标、K线库与前端离线包)
-+.mocortech.com
+DOMAIN-SUFFIX,mocortech.com
 
 
 # =========================================================================
@@ -233,143 +242,143 @@ bybit.ada.support
 # =========================================================================
 # ── 1. HTX / 火币官方主站与各区域移动端服务 ──
 # HTX (原火币) 全新国际品牌主域名
-+.htx.com
+DOMAIN-SUFFIX,htx.com
 # 火币官方历史国际主站
-+.huobi.com
+DOMAIN-SUFFIX,huobi.com
 # 火币移动端备用服务域名
-+.huobi.me
+DOMAIN-SUFFIX,huobi.me
 # 火币专业版 (Huobi Pro) 交易核心
-+.huobi.pro
+DOMAIN-SUFFIX,huobi.pro
 # 火币高可用防封备用域名
-+.huobi.sc
+DOMAIN-SUFFIX,huobi.sc
 # 火币亚太区 VIP 专属线路
-+.huobiasia.vip
+DOMAIN-SUFFIX,huobiasia.vip
 # 火币集团官方企业平台
-+.huobigroup.com
+DOMAIN-SUFFIX,huobigroup.com
 # 火币平台币 (HT) 官方生态主站
-+.huobitoken.com
+DOMAIN-SUFFIX,huobitoken.com
 
 # ── 2. 火币静态资源、行情分发与中继系统 ──
 # 火币官方行情分发中继
-+.hbabit.com
+DOMAIN-SUFFIX,hbabit.com
 # 火币核心静态资源与图片 CDN 加速网关
-+.hbfile.net
+DOMAIN-SUFFIX,hbfile.net
 
 
 # =========================================================================
 # 六、 Gate.io (芝麻开门) 官方生态与数据服务集群
 # =========================================================================
 # Gate.io 芝麻开门官方国际主站
-+.gate.io
+DOMAIN-SUFFIX,gate.io
 # Gate.io 移动端与网页实时备用线路
-+.gateio.live
+DOMAIN-SUFFIX,gateio.live
 # Gate.io 企业级微服务与 API 中继
-+.gateio.services
+DOMAIN-SUFFIX,gateio.services
 # Gate.io 实时市场深度与行情数据网关
-+.gatedata.org
+DOMAIN-SUFFIX,gatedata.org
 # Gate.io 官方币种图标与静态资源 CDN
-+.gateimg.com
+DOMAIN-SUFFIX,gateimg.com
 
 
 # =========================================================================
 # 七、 KuCoin (库币) 官方生态与服务集群
 # =========================================================================
 # KuCoin 国际官方主站与撮合服务
-+.kucoin.com
+DOMAIN-SUFFIX,kucoin.com
 # KuCoin 移动客户端多活加速与推送增强域名
-+.kucoin.plus
+DOMAIN-SUFFIX,kucoin.plus
 
 
 # =========================================================================
 # 八、 欧美主流与合规持牌知名交易所 (CEX)
 # =========================================================================
 # Coinbase (美国纳斯达克上市合规交易所)
-+.coinbase.com
+DOMAIN-SUFFIX,coinbase.com
 # Kraken (美国老牌持牌合规数字资产交易所)
-+.kraken.com
+DOMAIN-SUFFIX,kraken.com
 # Kraken 官方备用与跳转通道
-+.kraken.onl
+DOMAIN-SUFFIX,kraken.onl
 # Crypto.com (Cronos, 知名合规大所与 Visa 加密卡平台)
-+.crypto.com
+DOMAIN-SUFFIX,crypto.com
 # Bitfinex (iFinex / Tether 旗下老牌交易所)
-+.bitfinex.com
+DOMAIN-SUFFIX,bitfinex.com
 # Bitstamp (欧洲历史悠久持牌合规交易所)
-+.bitstamp.net
+DOMAIN-SUFFIX,bitstamp.net
 # Bitget (全球领先加密衍生品与跟单交易平台)
-+.bitget.com
+DOMAIN-SUFFIX,bitget.com
 # Deribit (全球最大加密货币期权与衍生品交易所)
-+.deribit.com
+DOMAIN-SUFFIX,deribit.com
 # Deribit 官方 Prismic 内容管理与营销 CDN
-deribit.cdn.prismic.io
+DOMAIN,deribit.cdn.prismic.io
 # BitMEX (知名老牌加密货币杠杆期货交易所)
-+.bitmex.com
+DOMAIN-SUFFIX,bitmex.com
 # Gemini (双子星, 纽约州持牌合规信托交易所)
-+.gemini.com
+DOMAIN-SUFFIX,gemini.com
 # CEX.IO (英国老牌综合数字资产交易所)
-+.cex.io
+DOMAIN-SUFFIX,cex.io
 # Bittrex (美国老牌加密数字资产交易所)
-+.bittrex.com
+DOMAIN-SUFFIX,bittrex.com
 # Nexo (欧洲持牌合规加密资产借贷与理财交易所)
-+.nexo.com
+DOMAIN-SUFFIX,nexo.com
 # Nexo 官方备用与 API 网关通道
-+.nexo.io
+DOMAIN-SUFFIX,nexo.io
 # OSL (香港证监会持牌合规机构级数字资产交易所)
-+.osl.com
+DOMAIN-SUFFIX,osl.com
 
 
 # =========================================================================
 # 九、 日韩持牌合规数字资产交易所
 # =========================================================================
 # BitFlyer (日本持牌大型合规加密交易所)
-+.bitflyer.com
+DOMAIN-SUFFIX,bitflyer.com
 # BitFlyer 日本本土站点
-+.bitflyer.jp
+DOMAIN-SUFFIX,bitflyer.jp
 # Bitbank (日本持牌知名现货数字资产交易所)
-+.bitbank.cc
+DOMAIN-SUFFIX,bitbank.cc
 # BtcBox (日本持牌老牌加密货币交易所)
-+.btcbox.co.jp
+DOMAIN-SUFFIX,btcbox.co.jp
 # Coinone (韩国四大合规持牌交易所之一官方主站)
-+.coinone.co.kr
+DOMAIN-SUFFIX,coinone.co.kr
 # Coinone 核心结算与账户数据服务
-+.coinonecore.com
+DOMAIN-SUFFIX,coinonecore.com
 # Coinone 企业级管理与运营服务
-+.coinonecorp.com
+DOMAIN-SUFFIX,coinonecorp.com
 
 
 # =========================================================================
 # 十、 区域老牌与早期数字资产交易所
 # =========================================================================
 # ZB.com (中币老牌数字资产交易平台)
-+.zb.com
+DOMAIN-SUFFIX,zb.com
 # ZB.com 移动客户端接口服务
-+.zb.app
+DOMAIN-SUFFIX,zb.app
 # ZB.com 国际备用业务网关
-+.zb.io
+DOMAIN-SUFFIX,zb.io
 # ZB.com 实时行情广播通道
-+.zb.live
+DOMAIN-SUFFIX,zb.live
 # Asproex (阿波罗数字资产交易平台)
-+.asproex.com
+DOMAIN-SUFFIX,asproex.com
 # Asproex 官方 API 接口服务
-+.asproexapi.com
+DOMAIN-SUFFIX,asproexapi.com
 
 
 # =========================================================================
 # 十一、 P2P 点对点去中心化场外交易平台
 # =========================================================================
 # LocalBitcoins (全球老牌场外 P2P 比特币交易平台)
-+.localbitcoins.com
+DOMAIN-SUFFIX,localbitcoins.com
 # LocalBitcoins 链上数据与备用通道
-+.localbitcoinschain.com
+DOMAIN-SUFFIX,localbitcoinschain.com
 # Bisq (开源去中心化 P2P 桌面交易网络官网)
-+.bisq.io
+DOMAIN-SUFFIX,bisq.io
 # Bisq 去中心化节点通信网络
-+.bisq.network
+DOMAIN-SUFFIX,bisq.network
 # Bitsquare (Bisq 早期原名网络节点)
-+.bitsquare.io
+DOMAIN-SUFFIX,bitsquare.io
 # Paxful (全球知名场外点对点加密货币集市)
-+.paxful.com
+DOMAIN-SUFFIX,paxful.com
 # Bitquick (老牌现金点对点买卖比特币平台)
-+.bitquick.co
+DOMAIN-SUFFIX,bitquick.co
 
 
 # =========================================================================
@@ -377,51 +386,51 @@ deribit.cdn.prismic.io
 # =========================================================================
 # ── 1. 顶级 DEX 与流动性聚合协议 ──
 # Uniswap (以太坊及多链最大的去中心化交易所)
-+.uniswap.org
+DOMAIN-SUFFIX,uniswap.org
 # 1inch (领先的去中心化 DEX 交易聚合器)
-+.1inch.io
+DOMAIN-SUFFIX,1inch.io
 # Curve Finance (以太坊稳定币核心流动性池)
-+.curve.fi
+DOMAIN-SUFFIX,curve.fi
 # dYdX (知名去中心化永续合约衍生品交易所)
-+.dydx.exchange
+DOMAIN-SUFFIX,dydx.exchange
 # Hashflow (多链零滑点去中心化交易协议)
-+.hashflow.com
+DOMAIN-SUFFIX,hashflow.com
 
 # ── 2. 去中心化借贷与无抵押信贷协议 ──
 # Aave (顶级去中心化非托管流动性借贷协议)
-+.aave.com
+DOMAIN-SUFFIX,aave.com
 # Clearpool (机构级非抵押 DeFi 信贷流动性网络)
-+.clearpool.finance
+DOMAIN-SUFFIX,clearpool.finance
 # TrueFi (机构级链上信用借贷与资金池协议)
-+.truefi.io
+DOMAIN-SUFFIX,truefi.io
 # Maple Finance (机构级资本市场加密借贷网络)
-+.maple.finance
+DOMAIN-SUFFIX,maple.finance
 # Metalpha (机构级数字资产衍生品与财富管理平台)
-+.metalpha.finance
+DOMAIN-SUFFIX,metalpha.finance
 
 # ── 3. 铭文协议、顶级高频做市商与流动性网络 ──
 # UniSat (比特币 Ordinals 铭文与 BRC-20 核心生态服务)
-+.unisat.io
+DOMAIN-SUFFIX,unisat.io
 # Wintermute (全球顶级加密资产算法流动性与高频做市商)
-+.wintermute.com
+DOMAIN-SUFFIX,wintermute.com
 # CyberX (机构级算法加密资产流动性做市网络)
-+.cyberx.com
+DOMAIN-SUFFIX,cyberx.com
 
 # ── 4. Solana 生态 DEX、Meme 发射台与全链流动性追踪 ──
 # Jupiter (Solana 生态最大 DEX 交易聚合引擎)
-+.jup.ag
+DOMAIN-SUFFIX,jup.ag
 # Jupiter 生态服务备用网关
-+.jup.eco
+DOMAIN-SUFFIX,jup.eco
 # Raydium (Solana 生态核心 AMM 流动性与做市协议)
-+.raydium.io
+DOMAIN-SUFFIX,raydium.io
 # Pump.fun (Solana 知名 Meme 币一键发射与流动性池平台)
-+.pump.fun
+DOMAIN-SUFFIX,pump.fun
 # GMGN.ai (顶级 Meme 币狙击、聪明钱监控与跟单交易平台)
-+.gmgn.ai
+DOMAIN-SUFFIX,gmgn.ai
 # DEXScreener (全球领先全链 DEX 实时行情盯盘与专业 K 线看板)
-+.dexscreener.com
+DOMAIN-SUFFIX,dexscreener.com
 # DEXTools (老牌多链去中心化价格追踪与流动性池深度分析)
-+.dextools.io
+DOMAIN-SUFFIX,dextools.io
 
 
 # =========================================================================
@@ -429,31 +438,31 @@ deribit.cdn.prismic.io
 # =========================================================================
 # ── 1. OneKey 开源硬件冷钱包生态 ──
 # OneKey 硬件钱包官方国际主站
-+.onekey.so
+DOMAIN-SUFFIX,onekey.so
 # OneKey 链上资产数据与多链 RPC 聚合服务
-+.onekey-asset.com
+DOMAIN-SUFFIX,onekey-asset.com
 # OneKey 大中华区备用服务站点
-+.onekeycn.com
+DOMAIN-SUFFIX,onekeycn.com
 # OneKey 官方国际工单客服支持中心
-onekey.zendesk.com
+DOMAIN,onekey.zendesk.com
 
 # ── 2. Trezor (SatoshiLabs) 硬件钱包生态 ──
 # Trezor 硬件钱包官方国际主站与 Suite 桌面套件
-+.trezor.io
+DOMAIN-SUFFIX,trezor.io
 # SatoshiLabs (Trezor 研发母公司官方网站)
-+.satoshilabs.com
+DOMAIN-SUFFIX,satoshilabs.com
 # Invity (Trezor 官方内置币币兑换与比价服务引擎)
-+.invity.io
+DOMAIN-SUFFIX,invity.io
 
 # ── 3. 移动端非托管钱包与通用连接协议 ──
 # Trust Wallet (全球知名多链非托管移动加密钱包)
-+.trustwallet.com
+DOMAIN-SUFFIX,trustwallet.com
 # Phantom 幻影钱包 (Solana 及多链顶级非托管移动端与插件钱包)
-+.phantom.app
+DOMAIN-SUFFIX,phantom.app
 # MetaMask 小狐狸钱包 (全球最大 EVM 以太坊生态 Web3 非托管钱包)
-+.metamask.io
+DOMAIN-SUFFIX,metamask.io
 # WalletConnect (Web3 DApp 与移动钱包连接通信标准协议)
-+.walletconnect.com
+DOMAIN-SUFFIX,walletconnect.com
 
 
 # =========================================================================
@@ -461,25 +470,25 @@ onekey.zendesk.com
 # =========================================================================
 # ── 1. RedotPay 加密借记卡生态 ──
 # RedotPay 官方国际主站 (支持 USDT/BTC/ETH 线上线下消费)
-+.redotpay.com
+DOMAIN-SUFFIX,redotpay.com
 # RedotPay 官方在线客户支持中心
-+.redotpay.zendesk.com
+DOMAIN-SUFFIX,redotpay.zendesk.com
 # RedotPay 亚太东京机房 AWS S3 静态资源存储桶
-+.rp-static-apne1.s3.ap-northeast-1.amazonaws.com
+DOMAIN-SUFFIX,rp-static-apne1.s3.ap-northeast-1.amazonaws.com
 
 # ── 2. 商业商户加密货币支付网关 ──
 # Cryptomus (知名加密货币商户网关与免签出入金支付平台)
-+.cryptomus.com
+DOMAIN-SUFFIX,cryptomus.com
 
 # ── 3. WiseKey / WiseCoin 身份凭证与数字资产生态 ──
 # WiseCoin 官方资产交易与结算系统
-+.wisecoin.com
+DOMAIN-SUFFIX,wisecoin.com
 # WiseID 去中心化数字身份安全认证服务
-+.wiseid.com
+DOMAIN-SUFFIX,wiseid.com
 # WISeKey 瑞士网络安全与数字资产硬件认证官方主站
-+.wisekey.com
+DOMAIN-SUFFIX,wisekey.com
 # WISeKey 香港区域官方服务站点
-+.wisekey.com.hk
+DOMAIN-SUFFIX,wisekey.com.hk
 
 
 # =========================================================================
@@ -487,93 +496,93 @@ onekey.zendesk.com
 # =========================================================================
 # ── 1. 行情聚合与市值分析数据工具 ──
 # CoinMarketCap (全球最大加密货币行情与市值跟踪网站)
-+.coinmarketcap.com
+DOMAIN-SUFFIX,coinmarketcap.com
 # CoinGecko (权威加密货币数据聚合与市场指标平台)
-+.coingecko.com
+DOMAIN-SUFFIX,coingecko.com
 # CryptoCompare (机构级加密数据分析与基准指数系统)
-+.cryptocompare.com
+DOMAIN-SUFFIX,cryptocompare.com
 # CoinMap (全球接受比特币与加密货币实体商家商户地图)
-+.coinmap.org
+DOMAIN-SUFFIX,coinmap.org
 # TradingView (全球领先金融与加密货币专业级行情图表及指标平台)
-+.tradingview.com
+DOMAIN-SUFFIX,tradingview.com
 
 # ── 2. 合约衍生品、爆仓监控与资金费率分析 ──
 # Coinglass (全球知名衍生品爆仓监控、持仓量与多空比分析看板)
-+.coinglass.com
+DOMAIN-SUFFIX,coinglass.com
 # Coinalyze (实时合约持仓量、CVD、资金费率与订单流图表)
-+.coinalyze.net
+DOMAIN-SUFFIX,coinalyze.net
 # FundingRates (全网主流交易所永续合约实时资金费率聚合平台)
-+.fundingrates.xyz
+DOMAIN-SUFFIX,fundingrates.xyz
 
 # ── 3. 链上资产看板、多链浏览器与行为数据 ──
 # DeBank (知名 Web3 多链资产看板、钱包跟踪与社交平台)
-+.debank.com
+DOMAIN-SUFFIX,debank.com
 # Etherscan (以太坊官方第一区块链浏览器与分析平台)
-+.etherscan.io
+DOMAIN-SUFFIX,etherscan.io
 # Solscan (Solana 官方权威区块链浏览器与链上分析看板)
-+.solscan.io
+DOMAIN-SUFFIX,solscan.io
 # DefiLlama (全网最大跨链 DeFi TVL 数据统计与多维清算分析看板)
-+.defillama.com
+DOMAIN-SUFFIX,defillama.com
 # RootData (领先的 Web3 资产数据平台、机构投资与项目知识图谱)
-+.rootdata.com
+DOMAIN-SUFFIX,rootdata.com
 # Arkham 链上情报分析与实体行为追踪平台短域
-+.arkm.com
+DOMAIN-SUFFIX,arkm.com
 # Arkham Intelligence (全球知名加密实体智能追踪与链上侦查官方主站)
-+.arkhamintelligence.com
+DOMAIN-SUFFIX,arkhamintelligence.com
 # Zapper (Web3 链上资产组合看板与 DeFi 流动性管理工具)
-+.zapper.fi
+DOMAIN-SUFFIX,zapper.fi
 # MyToken 移动端行情数据、资金流向与资讯 API
-+.mytokenapi.com
+DOMAIN-SUFFIX,mytokenapi.com
 
 # ── 4. 顶级加密行业智库与权威媒体 ──
 # The Block (全球领先加密货币研究智库与行业深度媒体)
-+.theblock.co
+DOMAIN-SUFFIX,theblock.co
 # CoinDesk (权威加密行业新闻媒体与 Consensus 共识大会主办方)
-+.coindesk.com
+DOMAIN-SUFFIX,coindesk.com
 
 
 # =========================================================================
 # 十六、 NFT 综合交易市场与去中心化预测市场
 # =========================================================================
 # OpenSea (全球最大多链 NFT 综合数字资产交易市场)
-+.opensea.io
+DOMAIN-SUFFIX,opensea.io
 # Polymarket (全球领先去中心化信息与重大事件预测交易市场)
-+.polymarket.com
+DOMAIN-SUFFIX,polymarket.com
 
 
 # =========================================================================
 # 十七、 公链生态基石、开发者基金会与 RPC 基础设施
 # =========================================================================
 # Bitcoin.org (中本聪创立的比特币官方开源门户)
-+.bitcoin.org
+DOMAIN-SUFFIX,bitcoin.org
 # Ethereum.org (以太坊官方技术文档与生态入口)
-+.ethereum.org
+DOMAIN-SUFFIX,ethereum.org
 # 以太坊基金会 (Ethereum Foundation) 官方主站
-+.ethereum.foundation
+DOMAIN-SUFFIX,ethereum.foundation
 # Devcon (以太坊开发者峰会官方主站)
-+.devcon.org
+DOMAIN-SUFFIX,devcon.org
 # 狗狗币 (Dogecoin) 官方社区主站
-+.dogecoin.com
+DOMAIN-SUFFIX,dogecoin.com
 # Ripple (瑞波公司官方网站与 XRP 支付网络)
-+.ripple.com
+DOMAIN-SUFFIX,ripple.com
 # Infura (ConsenSys 旗下以太坊/IPFS 全球核心 RPC 节点基础设施)
-+.infura.io
+DOMAIN-SUFFIX,infura.io
 # Blockfrost (Cardano 链上即时开发 API 节点网关)
-+.blockfrost.io
+DOMAIN-SUFFIX,blockfrost.io
 # Wynd Labs (Cosmos 生态去中心化应用网络开发机构)
-+.wyndlabs.ai
+DOMAIN-SUFFIX,wyndlabs.ai
 # Wynd Network 节点通信网络
-+.wynd.network
+DOMAIN-SUFFIX,wynd.network
 
 
 # =========================================================================
 # 十八、 交易所移动端归因分析与客服通信基础设施
 # =========================================================================
 # AppsFlyer 移动端广告归因与风控安全官方主站 (交易所 App 必备)
-+.appsflyer.com
+DOMAIN-SUFFIX,appsflyer.com
 # AppsFlyer SDK 移动端安全配置与动态上报全矩阵 (涵盖 launches 等子域)
-+.appsflyersdk.com
+DOMAIN-SUFFIX,appsflyersdk.com
 # AppsFlyer SDK 移动端安全配置与风控 CDN 通道
-+.xhpjc6-cdn-settings.appsflyersdk.com
+DOMAIN-SUFFIX,xhpjc6-cdn-settings.appsflyersdk.com
 # Zendesk Sunshine Conversations 实时 WebSocket 国际客服消息通道
-+.pod-15-sunco-ws.zendesk.com
+DOMAIN-SUFFIX,pod-15-sunco-ws.zendesk.com
