@@ -48,31 +48,68 @@ DOMAIN-SUFFIX,usmartcapital.com
 DOMAIN-SUFFIX,usmartnz.com
 
 # =========================================================================
-# 七、 uSMART 官方客服在线支持专属通道
+# 七、 港证软件 / 盈立智投核心技术系统 (yxzq.com 核心交易与行情矩阵)
 # =========================================================================
-# uSMART 移动端内置 Udesk 客户支持系统专用接入节点 (实测客户端高频心跳)
-DOMAIN,cs-usmart.s5.udesk.cn
+# 港证软件（深圳）有限公司（原名：盈立数智科技（深圳）有限公司，uSMART Inlet Limited 控股）
+# 现场实测捕获：承载盈立智投移动端核心交易 API (jy.yxzq.com)、行情推送 (hq.yxzq.com)、
+# 综合网关 (hz.yxzq.com)、安全中心 (sc.yxzq.com) 与热更新包 (m-dl.yxzq.com)
+DOMAIN-SUFFIX,yxzq.com
+DOMAIN-KEYWORD,yxzq
 
 # =========================================================================
-# 八、 品牌主关键字防漏网全域兜底
+# 八、 uSMART 官方在线客服、多渠道会话与互动技术体系
+# =========================================================================
+# 1. uSMART 移动端内置 Udesk 客户支持系统专用接入节点 (实测客户端高频心跳)
+DOMAIN,cs-usmart.s5.udesk.cn
+# 2. uSMART 移动端内置 Omnichat 全渠道智能客服与媒体分发网关 (实测下载 3MB+ 会话资源)
+DOMAIN-SUFFIX,omnichat.ai
+# 3. uSMART 移动端内置 EasyChat 在线会话与工单中继系统 (实测连接 chat-plugin / api)
+DOMAIN-SUFFIX,easychat.co
+
+# =========================================================================
+# 九、 uSMART 客户端体验分析、会话回放与营销归因 SDK 网关
+# =========================================================================
+# 1. Smartlook 客户端会话回放与体验监控 (防止掉入漏网之鱼导致美西跨洋延迟)
+DOMAIN-SUFFIX,smartlook.com
+DOMAIN-SUFFIX,smartlook.cloud
+# 2. Appier 亚太金融科技精准获客与设备归因 SDK
+DOMAIN-SUFFIX,appier.net
+
+# =========================================================================
+# 十、 品牌主关键字防漏网全域兜底
 # =========================================================================
 DOMAIN-KEYWORD,usmart
 
 # =========================================================================
-# 九、 盈立证券官方金融机房与专线 IP 直连 (带 no-resolve 裸 IP 直通)
+# 十一、 盈立证券官方金融机房与专线 IP 直连 (带 no-resolve 裸 IP 直通)
 # =========================================================================
-# ── 1. 阿里云香港金融机房 (Alibaba Cloud HK，承载核心交易 sc 与移动网关 m) ──
+# ── 1. 阿里云香港/亚太金融机房 (承载海外行情 hq/hz 落地、26000金融心跳与核心交易 sc) ──
 IP-CIDR,47.242.182.40/32,no-resolve
 IP-CIDR,47.242.170.132/32,no-resolve
+IP-CIDR,47.242.214.131/32,no-resolve
 IP-CIDR,47.76.108.246/32,no-resolve
+IP-CIDR,47.240.107.193/32,no-resolve
+IP-CIDR,47.240.105.222/32,no-resolve
 IP-CIDR,47.242.0.0/16,no-resolve
 IP-CIDR,47.76.0.0/16,no-resolve
+IP-CIDR,47.240.0.0/16,no-resolve
 
-# ── 2. 腾讯云香港金融机房 (Tencent Cloud HK，承载 usmarthk.com 与官方网关) ──
+# ── 2. 腾讯云香港/华南金融专线机房 (承载 usmarthk 与 yxzq 核心网关与更新包) ──
 IP-CIDR,119.28.205.187/32,no-resolve
+IP-CIDR,124.156.123.52/32,no-resolve
+IP-CIDR,139.199.138.79/32,no-resolve
+IP-CIDR,139.199.139.211/32,no-resolve
 IP-CIDR,139.199.140.146/32,no-resolve
 IP-CIDR,119.28.0.0/16,no-resolve
+IP-CIDR,124.156.0.0/16,no-resolve
+IP-CIDR,139.199.0.0/16,no-resolve
 
-# ── 3. 香港本地 Access Solutions / HKBN 专线机房 (承载 usmart.com.hk 官网) ──
+# ── 3. 阿里云全球加速 GA / 华南前置接入节点 ──
+IP-CIDR,120.25.49.50/32,no-resolve
+IP-CIDR,120.25.207.47/32,no-resolve
+IP-CIDR,120.25.203.111/32,no-resolve
+IP-CIDR,120.25.0.0/16,no-resolve
+
+# ── 4. 香港本地 Access Solutions / HKBN 专线机房 (承载 usmart.com.hk 官网) ──
 IP-CIDR,182.239.55.22/32,no-resolve
 IP-CIDR,182.239.55.0/24,no-resolve
