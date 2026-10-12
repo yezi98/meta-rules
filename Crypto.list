@@ -37,14 +37,24 @@ deribit.cdn.prismic.io
 +.invity.io
 +.maple.finance
 +.metalpha.finance
+# =========================================================================
+# ★ MEXC 抹茶交易所 (MEXC Global) 全矩阵深度分流与动态防封集群
+# =========================================================================
+# ── 1. MEXC 官方主站、用户中心、短链与数据埋点 ──
 +.mexc.com
++.mexc.link
++.mexc.me
 +.mexcsensors.com
+# ── 2. MEXC 核心撮合引擎、Rest API 与实时 WebSocket 行情集群 (涵盖 pangu, appapi, ws-app 等) ──
 +.xcoinsystem.com
+# ── 3. MEXC 移动端主力动态防封轮换交易前端与多活网关集群 (涵盖 futures, otc, wbs, prediction 等) ──
 +.greentreeone.com
 +.flytogarden.com
 +.hotbookzone.com
 +.coldbookfly.ru
+# ── 4. MEXC 客户端设备指纹、生物特征安全风控与反作弊鉴权网关 (涵盖 watchman, trochi, e 等) ──
 +.gotoda.co
+# ── 5. MEXC 移动端前端静态资源、离线包与热更新 CDN 加速网关 (涵盖 static.mocortech.com 等) ──
 +.mocortech.com
 +.mytokenapi.com
 +.opensea.io
