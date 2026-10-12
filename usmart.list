@@ -83,16 +83,18 @@ DOMAIN-KEYWORD,usmart
 # =========================================================================
 # 十一、 盈立证券官方金融机房与专线 IP 直连 (带 no-resolve 裸 IP 直通)
 # =========================================================================
-# ── 1. 阿里云香港/亚太金融机房 (承载海外行情 hq/hz 落地、26000金融心跳与核心交易 sc) ──
+# ── 1. 阿里云香港/亚太金融机房 (承载海外行情 hq/hz 落地、21000/26000金融心跳与核心交易 sc) ──
+IP-CIDR,47.239.19.15/32,no-resolve
 IP-CIDR,47.242.182.40/32,no-resolve
 IP-CIDR,47.242.170.132/32,no-resolve
 IP-CIDR,47.242.214.131/32,no-resolve
+IP-CIDR,47.76.92.118/32,no-resolve
 IP-CIDR,47.76.108.246/32,no-resolve
 IP-CIDR,47.240.107.193/32,no-resolve
 IP-CIDR,47.240.105.222/32,no-resolve
-IP-CIDR,47.242.0.0/16,no-resolve
+IP-CIDR,47.238.0.0/15,no-resolve
+IP-CIDR,47.240.0.0/14,no-resolve
 IP-CIDR,47.76.0.0/16,no-resolve
-IP-CIDR,47.240.0.0/16,no-resolve
 
 # ── 2. 腾讯云香港/华南金融专线机房 (承载 usmarthk 与 yxzq 核心网关与更新包) ──
 IP-CIDR,119.28.205.187/32,no-resolve
