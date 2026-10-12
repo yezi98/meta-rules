@@ -1,183 +1,319 @@
-onekey.zendesk.com
-bybit-exchange.github.io
-bybit.ada.support
-deribit.cdn.prismic.io
-+.binancezh.kim
-+.binance.cloud
-+.bitbank.cc
-+.bitcoin.org
-+.bitfinex.com
-+.bitget.com
-+.bitmex.com
-+.bitquick.co
-+.bitstamp.net
-+.bittrex.com
-+.blockfrost.io
-+.cex.io
-+.clearpool.finance
-+.coinalyze.net
-+.coinbase.com
-+.coindesk.com
-+.coingecko.com
-+.coinglass.com
-+.coinmap.org
-+.coinmarketcap.com
-+.crypto.com
-+.cryptocompare.com
-+.cryptomus.com
-+.curve.fi
-+.cyberx.com
-+.debank.com
-+.dogecoin.com
-+.dydx.exchange
-+.fundingrates.xyz
-+.binancezh.live
-+.hashflow.com
-+.infura.io
-+.invity.io
-+.maple.finance
-+.metalpha.finance
+# NAME: Crypto
+# DESC: 加密货币交易所 (CEX)、去中心化金融 (DeFi)、Web3、钱包、链上数据与加密出入金专属全量分流规则集
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🪙 Crypto / Wise」策略组（严选台湾 WARP 极净出口）
+# 维护: 在 GitHub 直接编辑本文件提交后，在局域网终端执行下方命令（或面板点更新），即可秒级热更新生效，无需重启旁路由：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/crypto_user
+
 # =========================================================================
-# ★ MEXC 抹茶交易所 (MEXC Global) 全矩阵深度分流与动态防封集群
+# 一、 币安 (Binance) 官方生态与动态防封域名集群
+# =========================================================================
+# ── 1. 币安国际官方主站、API 接口、静态 CDN 与内容网络 ──
++.binance.com                         # 币安国际官方主站
++.binance.co                          # 币安国际备用主域名
++.binance.cc                          # 币安官方备用域名
++.binance.info                        # 币安官方资讯与数据平台
++.binance.me                          # 币安移动端备用服务域名
++.binance.net                         # 币安官方网络基础设施域名
++.binance.org                         # BNB Chain (币安智能链) 官方主站
++.binance.us                          # 币安美国独立合规交易所 (防止误入美区)
++.binance.vision                      # 币安官方 API 开发者文档与测试网
++.binanceapi.com                      # 币安官方核心 API 数据接口
++.binancecnt.com                      # 币安静态资源与内容分发加速通道
++.bnbstatic.com                       # 币安官方核心图片与静态资产 CDN 网关
+
+# ── 2. 币安官方多区域与国内动态防封镜像域名 ──
++.binancezh.com                       # 币安中文区主备用镜像站
++.binancezh.co                        # 币安中文区快捷跳转域名
++.binancezh.cc                        # 币安中文区多活服务域名
++.binancezh.info                      # 币安中文区资讯与公告镜像
++.binancezh.ink                       # 币安中文区动态备用域名
++.binancezh.kim                       # 币安中文区高可用防封中继
++.binancezh.link                      # 币安官方分享与推广重定向通道
++.binancezh.live                      # 币安中文区实时行情镜像
++.binancezh.mobi                      # 币安移动端专用备用域名
++.binancezh.net                       # 币安中文区网络备份中继
++.binancezh.pro                       # 币安专业版交易界面镜像
++.binancezh.sh                        # 币安动态防封安全解析中继
++.binancezh.top                       # 币安多活容灾备用域名
++.binancezh.be                        # 币安欧洲区域备用镜像
++.binancezh.biz                       # 币安企业与机构备用通道
+
+# ── 3. 币安云平台、慈善与底层交易所 SaaS 架构 ──
++.binance.cloud                       # 币安云 (Binance Cloud) 交易所基础设施服务
++.binance.charity                     # 币安慈善基金会官方平台
++.saasexch.com                        # 币安云托管交易所核心 SaaS 撮合服务
++.saasexch.io                         # 币安云托管交易所 Web 端与 API 网关
+
+
+# =========================================================================
+# 二、 欧易 (OKX / OKEx) 官方生态与解析网关集群
+# =========================================================================
+# ── 1. 欧易官方主站、历史域名与 Web3 浏览器 ──
++.okx.com                             # 欧易 OKX 国际官方主站与交易核心
++.okex.com                            # 欧易历史主域名 (旧版兼容重定向通道)
++.oklink.com                          # 欧科云链多链区块链浏览器与数据看板
+
+# ── 2. 欧易移动端海外 Clean DNS 调度与防封解析网关 ──
++.okx-dns.com                         # 欧易核心动态 DNS 防封调度网关
++.okx-dns1.com                        # 欧易备用 DNS 解析服务 1
++.okx-dns2.com                        # 欧易备用 DNS 解析服务 2
+
+
+# =========================================================================
+# 三、 Bybit (拜比特) 官方生态与动态防封网关集群
+# =========================================================================
+# ── 1. Bybit 国际官方主站、全球站与中继线路 ──
++.bybit.com                           # Bybit 国际官方主站与核心交易中心
++.bybit-global.com                    # Bybit 全球站主域名
++.bybitglobal.com                     # Bybit 全球备用交易域名
++.bybit.biz                           # Bybit 商业备用中继通道
++.bybit.cloud                         # Bybit 云端架构与后台服务基础设施
+
+# ── 2. Bybit 核心交易 API、撮合系统与高频行情推送 ──
++.byapis.com                          # Bybit 全球核心 RESTful API 接口
++.byapps.net                          # Bybit 移动端与 Web 静态资源分发网络
++.bycsi.com                           # Bybit 核心撮合与订单状态处理网关
++.bytick.com                          # Bybit 实时 Tick 级高频行情 WebSocket 推送
+
+# ── 3. Bybit 移动端多活容灾与前端加速通道 ──
++.bycbe.com                           # Bybit 客户端业务处理通道
++.bymj.io                             # Bybit 动态前端加速镜像
++.byabcde.com                         # Bybit 移动端动态防封轮换域名 A
++.bybdc6.com                          # Bybit 移动端动态防封轮换域名 B
++.byd3c3.com                          # Bybit 移动端动态防封轮换域名 C
+
+# ── 4. Bybit 开发者文档与智能客服系统 ──
+bybit-exchange.github.io              # Bybit 官方 GitHub API 开发者文档托管
+bybit.ada.support                     # Bybit 官方 Ada 智能在线客服网关
+
+
+# =========================================================================
+# 四、 MEXC 抹茶交易所 (MEXC Global) 全矩阵深度分流与动态防封集群
 # =========================================================================
 # ── 1. MEXC 官方主站、用户中心、短链与数据埋点 ──
-+.mexc.com
-+.mexc.link
-+.mexc.me
-+.mexcsensors.com
-# ── 2. MEXC 核心撮合引擎、Rest API 与实时 WebSocket 行情集群 (涵盖 pangu, appapi, ws-app 等) ──
-+.xcoinsystem.com
-# ── 3. MEXC 移动端主力动态防封轮换交易前端与多活网关集群 (涵盖 futures, otc, wbs, prediction 等) ──
-+.greentreeone.com
-+.flytogarden.com
-+.hotbookzone.com
-+.coldbookfly.ru
-# ── 4. MEXC 客户端设备指纹、生物特征安全风控与反作弊鉴权网关 (涵盖 watchman, trochi, e 等) ──
-+.gotoda.co
-# ── 5. MEXC 移动端前端静态资源、离线包与热更新 CDN 加速网关 (涵盖 static.mocortech.com 等) ──
-+.mocortech.com
-+.mytokenapi.com
-+.opensea.io
-+.osl.com
-+.paxful.com
-+.polymarket.com
-+.ripple.com
-+.satoshilabs.com
-+.theblock.co
-+.trezor.io
-+.truefi.io
-+.unisat.io
-+.uniswap.org
-+.walletconnect.com
-+.wintermute.com
-+.zapper.fi
-+.bisq.io
-+.bisq.network
-+.bitsquare.io
-+.localbitcoins.com
-+.localbitcoinschain.com
-+.wyndlabs.ai
-+.wynd.network
-+.asproex.com
-+.asproexapi.com
-+.binance.cc
-+.binance.charity
-+.binancezh.link
-+.binance.co
-+.binance.com
-+.binance.info
-+.binance.me
-+.binance.net
-+.binance.org
-+.binance.us
-+.binance.vision
-+.binancecnt.com
-+.binancezh.be
-+.binancezh.biz
-+.1inch.io
-+.binancezh.co
-+.binancezh.com
-+.binancezh.info
-+.binancezh.ink
-+.binancezh.cc
-+.aave.com
-+.gemini.com
-+.binancezh.mobi
-+.binancezh.net
-+.binancezh.pro
-+.binancezh.sh
-+.binancezh.top
-+.binanceapi.com
-+.bnbstatic.com
-+.saasexch.com
-+.saasexch.io
-+.appsflayer.com
-+.devcon.org
-+.ethereum.foundation
-+.ethereum.org
-+.etherscan.io
-+.htx.com
-+.hbabit.com
-+.hbfile.net
-+.huobi.com
-+.huobi.me
-+.huobi.pro
-+.huobi.sc
-+.huobiasia.vip
-+.huobigroup.com
-+.huobitoken.com
-+.onekey-asset.com
-+.onekey.so
-+.onekeycn.com
-+.redotpay.com
-+.zb.app
-+.zb.com
-+.zb.io
-+.zb.live
-+.trustwallet.com
-+.bitflyer.com
-+.bitflyer.jp
-+.bybit.com
-+.bycsi.com
-+.bytick.com
-+.byapis.com
-+.bycbe.com
-+.bymj.io
-+.byabcde.com
-+.byapps.net
-+.byd3c3.com
-+.bybit.biz
-+.bybdc6.com
-+.bybit-global.com
-+.bybit.cloud
-+.bybitglobal.com
-+.coinonecore.com
-+.coinonecorp.com
-+.kucoin.plus
-+.kucoin.com
-+.kraken.onl
-+.kraken.com
-+.nexo.com
-+.nexo.io
-+.okex.com
-+.okx.com
-+.okx-dns.com
-+.okx-dns1.com
-+.okx-dns2.com
-+.wisecoin.com
-+.wiseid.com
-+.wisekey.com
-+.gateio.services
-+.deribit.com
-+.gate.io
-+.gatedata.org
-+.gateimg.com
-+.gateio.live
-+.wisekey.com.hk
-+.coinone.co.kr
-+.xhpjc6-cdn-settings.appsflyersdk.com
-+.pod-15-sunco-ws.zendesk.com
-+.redotpay.zendesk.com
-+.btcbox.co.jp
-+.rp-static-apne1.s3.ap-northeast-1.amazonaws.com
-+.oklink.com
++.mexc.com                            # MEXC 官方国际主域名，承载官网主站、用户中台与核心 API
++.mexc.link                           # MEXC 移动端官方短链、应用内活动推广与分享重定向通道
++.mexc.me                             # MEXC 官方备用域名与移动客户端多活分发中继服务
++.mexcsensors.com                     # MEXC 客户端数据埋点、APM 性能监控与用户行为分析 SDK 网关
+
+# ── 2. MEXC 核心交易引擎、撮合网关与实时 WebSocket 行情集群 ──
++.xcoinsystem.com                     # MEXC 核心撮合与行情推送系统 (涵盖 pangu 认证网关、appapi 业务接口、ws-app-futures/ws-app-spot 实时推送)
+
+# ── 3. MEXC 移动端主力动态防封轮换交易前端与多活网关集群 ──
++.greentreeone.com                    # MEXC 移动端主力动态轮换前端 (涵盖 futures 合约、otc 场外交易、wbs 网页视图、prediction 等接口)
++.flytogarden.com                     # MEXC 移动端动态防封备用轮换交易前端与容灾镜像网关
++.hotbookzone.com                     # MEXC 深度订单簿、挂单明细与实时盘口推送备用轮换网关
++.coldbookfly.ru                      # MEXC 海外多活紧急容灾线路与备用撮合接入节点
+
+# ── 4. MEXC 客户端设备指纹、生物特征安全风控与反作弊鉴权网关 ──
++.gotoda.co                           # MEXC 客户端风控安全网关 (涵盖 watchman 设备指纹、trochi/e 鉴权网关，防止误落美区导致风控封禁)
+
+# ── 5. MEXC 移动端前端静态资源、离线包与热更新 CDN 加速网关 ──
++.mocortech.com                       # MEXC 静态资产 CDN 加速网关 (涵盖 static.mocortech.com 币种图标、K线库与前端离线包)
+
+
+# =========================================================================
+# 五、 HTX / 火币 (Huobi Global) 官方生态与多活集群
+# =========================================================================
+# ── 1. HTX / 火币官方主站与各区域移动端服务 ──
++.htx.com                             # HTX (原火币) 全新国际品牌主域名
++.huobi.com                           # 火币官方历史国际主站
++.huobi.me                            # 火币移动端备用服务域名
++.huobi.pro                           # 火币专业版 (Huobi Pro) 交易核心
++.huobi.sc                            # 火币高可用防封备用域名
++.huobiasia.vip                       # 火币亚太区 VIP 专属线路
++.huobigroup.com                      # 火币集团官方企业平台
++.huobitoken.com                      # 火币平台币 (HT) 官方生态主站
+
+# ── 2. 火币静态资源、行情分发与中继系统 ──
++.hbabit.com                          # 火币官方行情分发中继
++.hbfile.net                          # 火币核心静态资源与图片 CDN 加速网关
+
+
+# =========================================================================
+# 六、 Gate.io (芝麻开门) 官方生态与数据服务集群
+# =========================================================================
++.gate.io                             # Gate.io 芝麻开门官方国际主站
++.gateio.live                         # Gate.io 移动端与网页实时备用线路
++.gateio.services                     # Gate.io 企业级微服务与 API 中继
++.gatedata.org                        # Gate.io 实时市场深度与行情数据网关
++.gateimg.com                         # Gate.io 官方币种图标与静态资源 CDN
+
+
+# =========================================================================
+# 七、 KuCoin (库币) 官方生态与服务集群
+# =========================================================================
++.kucoin.com                          # KuCoin 国际官方主站与撮合服务
++.kucoin.plus                         # KuCoin 移动客户端多活加速与推送增强域名
+
+
+# =========================================================================
+# 八、 欧美主流与合规持牌知名交易所 (CEX)
+# =========================================================================
++.coinbase.com                        # Coinbase (美国纳斯达克上市合规交易所)
++.kraken.com                          # Kraken (美国老牌持牌合规数字资产交易所)
++.kraken.onl                          # Kraken 官方备用与跳转通道
++.crypto.com                          # Crypto.com (Cronos, 知名合规大所与 Visa 加密卡平台)
++.bitfinex.com                        # Bitfinex (iFinex / Tether 旗下老牌交易所)
++.bitstamp.net                        # Bitstamp (欧洲历史悠久持牌合规交易所)
++.bitget.com                          # Bitget (全球领先加密衍生品与跟单交易平台)
++.deribit.com                         # Deribit (全球最大加密货币期权与衍生品交易所)
+deribit.cdn.prismic.io                # Deribit 官方 Prismic 内容管理与营销 CDN
++.bitmex.com                          # BitMEX (知名老牌加密货币杠杆期货交易所)
++.gemini.com                          # Gemini (双子星, 纽约州持牌合规信托交易所)
++.cex.io                              # CEX.IO (英国老牌综合数字资产交易所)
++.bittrex.com                         # Bittrex (美国老牌加密数字资产交易所)
++.nexo.com                            # Nexo (欧洲持牌合规加密资产借贷与理财交易所)
++.nexo.io                             # Nexo 官方备用与 API 网关通道
++.osl.com                             # OSL (香港证监会持牌合规机构级数字资产交易所)
+
+
+# =========================================================================
+# 九、 日韩持牌合规数字资产交易所
+# =========================================================================
++.bitflyer.com                        # BitFlyer (日本持牌大型合规加密交易所)
++.bitflyer.jp                         # BitFlyer 日本本土站点
++.bitbank.cc                          # Bitbank (日本持牌知名现货数字资产交易所)
++.btcbox.co.jp                        # BtcBox (日本持牌老牌加密货币交易所)
++.coinone.co.kr                       # Coinone (韩国四大合规持牌交易所之一官方主站)
++.coinonecore.com                     # Coinone 核心结算与账户数据服务
++.coinonecorp.com                     # Coinone 企业级管理与运营服务
+
+
+# =========================================================================
+# 十、 区域老牌与早期数字资产交易所
+# =========================================================================
++.zb.com                              # ZB.com (中币老牌数字资产交易平台)
++.zb.app                              # ZB.com 移动客户端接口服务
++.zb.io                               # ZB.com 国际备用业务网关
++.zb.live                             # ZB.com 实时行情广播通道
++.asproex.com                         # Asproex (阿波罗数字资产交易平台)
++.asproexapi.com                      # Asproex 官方 API 接口服务
+
+
+# =========================================================================
+# 十一、 P2P 点对点去中心化场外交易平台
+# =========================================================================
++.localbitcoins.com                   # LocalBitcoins (全球老牌场外 P2P 比特币交易平台)
++.localbitcoinschain.com              # LocalBitcoins 链上数据与备用通道
++.bisq.io                             # Bisq (开源去中心化 P2P 桌面交易网络官网)
++.bisq.network                        # Bisq 去中心化节点通信网络
++.bitsquare.io                        # Bitsquare (Bisq 早期原名网络节点)
++.paxful.com                          # Paxful (全球知名场外点对点加密货币集市)
++.bitquick.co                         # Bitquick (老牌现金点对点买卖比特币平台)
+
+
+# =========================================================================
+# 十二、 DeFi 去中心化交易所 (DEX)、借贷协议与机构做市商
+# =========================================================================
+# ── 1. 顶级 DEX 与流动性聚合协议 ──
++.uniswap.org                         # Uniswap (以太坊及多链最大的去中心化交易所)
++.1inch.io                            # 1inch (领先的去中心化 DEX 交易聚合器)
++.curve.fi                            # Curve Finance (以太坊稳定币核心流动性池)
++.dydx.exchange                       # dYdX (知名去中心化永续合约衍生品交易所)
++.hashflow.com                        # Hashflow (多链零滑点去中心化交易协议)
+
+# ── 2. 去中心化借贷与无抵押信贷协议 ──
++.aave.com                            # Aave (顶级去中心化非托管流动性借贷协议)
++.clearpool.finance                   # Clearpool (机构级非抵押 DeFi 信贷流动性网络)
++.truefi.io                           # TrueFi (机构级链上信用借贷与资金池协议)
++.maple.finance                       # Maple Finance (机构级资本市场加密借贷网络)
++.metalpha.finance                    # Metalpha (机构级数字资产衍生品与财富管理平台)
+
+# ── 3. 铭文协议、顶级高频做市商与流动性网络 ──
++.unisat.io                           # UniSat (比特币 Ordinals 铭文与 BRC-20 核心生态服务)
++.wintermute.com                      # Wintermute (全球顶级加密资产算法流动性与高频做市商)
++.cyberx.com                          # CyberX (机构级算法加密资产流动性做市网络)
+
+
+# =========================================================================
+# 十三、 加密钱包、硬件冷钱包与连接通信协议
+# =========================================================================
+# ── 1. OneKey 开源硬件冷钱包生态 ──
++.onekey.so                           # OneKey 硬件钱包官方国际主站
++.onekey-asset.com                    # OneKey 链上资产数据与多链 RPC 聚合服务
++.onekeycn.com                        # OneKey 大中华区备用服务站点
+onekey.zendesk.com                    # OneKey 官方国际工单客服支持中心
+
+# ── 2. Trezor (SatoshiLabs) 硬件钱包生态 ──
++.trezor.io                           # Trezor 硬件钱包官方国际主站与 Suite 桌面套件
++.satoshilabs.com                     # SatoshiLabs (Trezor 研发母公司官方网站)
++.invity.io                           # Invity (Trezor 官方内置币币兑换与比价服务引擎)
+
+# ── 3. 移动端非托管钱包与通用连接协议 ──
++.trustwallet.com                     # Trust Wallet (全球知名多链非托管移动加密钱包)
++.walletconnect.com                   # WalletConnect (Web3 DApp 与移动钱包连接通信标准协议)
+
+
+# =========================================================================
+# 十四、 加密出入金、U卡 (Visa/Mastercard) 与数字身份认证
+# =========================================================================
+# ── 1. RedotPay 加密借记卡生态 ──
++.redotpay.com                        # RedotPay 官方国际主站 (支持 USDT/BTC/ETH 线上线下消费)
++.redotpay.zendesk.com                # RedotPay 官方在线客户支持中心
++.rp-static-apne1.s3.ap-northeast-1.amazonaws.com # RedotPay 亚太东京机房 AWS S3 静态资源存储桶
+
+# ── 2. 商业商户加密货币支付网关 ──
++.cryptomus.com                       # Cryptomus (知名加密货币商户网关与免签出入金支付平台)
+
+# ── 3. WiseKey / WiseCoin 身份凭证与数字资产生态 ──
++.wisecoin.com                        # WiseCoin 官方资产交易与结算系统
++.wiseid.com                          # WiseID 去中心化数字身份安全认证服务
++.wisekey.com                         # WISeKey 瑞士网络安全与数字资产硬件认证官方主站
++.wisekey.com.hk                      # WISeKey 香港区域官方服务站点
+
+
+# =========================================================================
+# 十五、 链上数据看板、行情跟踪与分析研究工具
+# =========================================================================
+# ── 1. 行情聚合与市值分析数据工具 ──
++.coinmarketcap.com                   # CoinMarketCap (全球最大加密货币行情与市值跟踪网站)
++.coingecko.com                       # CoinGecko (权威加密货币数据聚合与市场指标平台)
++.cryptocompare.com                   # CryptoCompare (机构级加密数据分析与基准指数系统)
++.coinmap.org                         # CoinMap (全球接受比特币与加密货币实体商家商户地图)
+
+# ── 2. 合约衍生品、爆仓监控与资金费率分析 ──
++.coinglass.com                       # Coinglass (全球知名衍生品爆仓监控、持仓量与多空比分析看板)
++.coinalyze.net                       # Coinalyze (实时合约持仓量、CVD、资金费率与订单流图表)
++.fundingrates.xyz                    # FundingRates (全网主流交易所永续合约实时资金费率聚合平台)
+
+# ── 3. 链上资产看板、多链浏览器与行为数据 ──
++.debank.com                          # DeBank (知名 Web3 多链资产看板、钱包跟踪与社交平台)
++.etherscan.io                        # Etherscan (以太坊官方第一区块链浏览器与分析平台)
++.zapper.fi                           # Zapper (Web3 链上资产组合看板与 DeFi 流动性管理工具)
++.mytokenapi.com                      # MyToken 移动端行情数据、资金流向与资讯 API
+
+# ── 4. 顶级加密行业智库与权威媒体 ──
++.theblock.co                         # The Block (全球领先加密货币研究智库与行业深度媒体)
++.coindesk.com                        # CoinDesk (权威加密行业新闻媒体与 Consensus 共识大会主办方)
+
+
+# =========================================================================
+# 十六、 NFT 综合交易市场与去中心化预测市场
+# =========================================================================
++.opensea.io                          # OpenSea (全球最大多链 NFT 综合数字资产交易市场)
++.polymarket.com                      # Polymarket (全球领先去中心化信息与重大事件预测交易市场)
+
+
+# =========================================================================
+# 十七、 公链生态基石、开发者基金会与 RPC 基础设施
+# =========================================================================
++.bitcoin.org                         # Bitcoin.org (中本聪创立的比特币官方开源门户)
++.ethereum.org                        # Ethereum.org (以太坊官方技术文档与生态入口)
++.ethereum.foundation                 # 以太坊基金会 (Ethereum Foundation) 官方主站
++.devcon.org                          # Devcon (以太坊开发者峰会官方主站)
++.dogecoin.com                        # 狗狗币 (Dogecoin) 官方社区主站
++.ripple.com                          # Ripple (瑞波公司官方网站与 XRP 支付网络)
++.infura.io                           # Infura (ConsenSys 旗下以太坊/IPFS 全球核心 RPC 节点基础设施)
++.blockfrost.io                       # Blockfrost (Cardano 链上即时开发 API 节点网关)
++.wyndlabs.ai                         # Wynd Labs (Cosmos 生态去中心化应用网络开发机构)
++.wynd.network                        # Wynd Network 节点通信网络
+
+
+# =========================================================================
+# 十八、 交易所移动端归因分析与客服通信基础设施
+# =========================================================================
++.appsflayer.com                      # AppsFlyer 移动端广告归因与风控安全网关 (交易所 App 必备)
++.xhpjc6-cdn-settings.appsflyersdk.com # AppsFlyer SDK 移动端安全配置与风控 CDN 通道
++.pod-15-sunco-ws.zendesk.com         # Zendesk Sunshine Conversations 实时 WebSocket 国际客服消息通道
