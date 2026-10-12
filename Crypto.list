@@ -89,6 +89,10 @@
 bybit-exchange.github.io              # Bybit 官方 GitHub API 开发者文档托管
 bybit.ada.support                     # Bybit 官方 Ada 智能在线客服网关
 
+# ── 5. Bybit 客户端数据埋点、A/B 测试实验与动态遥测网关 ──
++.ffbbbdc6d3c353211fe2ba39c9f744cd.com # Bybit 官方前端数据埋点与遥测网关 (涵盖 sc-datasink 与 api 子域)
++.ffe390afd658c19dcbf707e0597b846d.de  # Bybit 官方 A/B 测试、灰度发布与前端实验网关 (涵盖 sc-abtest 子域)
+
 
 # =========================================================================
 # 四、 MEXC 抹茶交易所 (MEXC Global) 全矩阵深度分流与动态防封集群
@@ -333,6 +337,7 @@ onekey.zendesk.com                    # OneKey 官方国际工单客服支持中
 # =========================================================================
 # 十八、 交易所移动端归因分析与客服通信基础设施
 # =========================================================================
-+.appsflayer.com                      # AppsFlyer 移动端广告归因与风控安全网关 (交易所 App 必备)
++.appsflyer.com                       # AppsFlyer 移动端广告归因与风控安全官方主站 (交易所 App 必备)
++.appsflyersdk.com                    # AppsFlyer SDK 移动端安全配置与动态上报全矩阵 (涵盖 launches 等子域)
 +.xhpjc6-cdn-settings.appsflyersdk.com # AppsFlyer SDK 移动端安全配置与风控 CDN 通道
 +.pod-15-sunco-ws.zendesk.com         # Zendesk Sunshine Conversations 实时 WebSocket 国际客服消息通道
