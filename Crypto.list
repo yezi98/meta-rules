@@ -135,6 +135,19 @@ IP-CIDR,57.180.143.38/32,no-resolve
 # 币安官方 bntrace 设备链路追踪风控网关 AWS 东京直连节点 C (现场实测抓包捕获)
 IP-CIDR,13.192.105.128/32,no-resolve
 
+# ── 7. 币安 Web3 钱包集成 DEX 衍生品交易与链上数据服务集群 ──
+# 币安官方领投/内置集成 AsterDEX 去中心化衍生品交易所 (现场实测抓包捕获)
+DOMAIN-SUFFIX,asterdex.com
+DOMAIN-SUFFIX,asterdex.mobi
+DOMAIN-SUFFIX,asterdex.tv
+DOMAIN-SUFFIX,asterdex.io
+DOMAIN-KEYWORD,asterdex
+# 币安 Skills Hub 与 Web3 钱包链上行情 K 线 (OHLCV) 与数据查询网关 (现场实测抓包捕获)
+DOMAIN-SUFFIX,sintral.me
+DOMAIN-SUFFIX,sintral.io
+DOMAIN-SUFFIX,sintral.link
+DOMAIN-KEYWORD,sintral
+
 
 # 二、 欧易 (OKX / OKEx) 官方生态与解析网关集群
 # =========================================================================
