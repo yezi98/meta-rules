@@ -77,6 +77,24 @@
 +.saasexch.com
 # 币安云托管交易所 Web 端与 API 网关
 +.saasexch.io
+# 币安云托管交易所 API 接口扩展网关
++.saasexch.info
+# 币安移动端专用动态 Webview、H5 离线包与活动前端防封域名
++.bnappweb.blue
++.bnappweb.com
++.bnappweb.net
+
+# ── 4. 币安移动端专属错误追踪、崩溃诊断与合规探测网关 ──
+# 币安专属 Sentry 错误追踪与诊断上报 (组织代码 o529943)
+o529943.ingest.sentry.io
+# 币安专属 Sentry 美区诊断上报
+o529943.ingest.us.sentry.io
+# 币安官方 OneTrust 地理位置探测 (防止掉入美西导致美国合规弹窗与清退)
+geolocation.onetrust.com
+# 币安官方 OneTrust Cookie 合规管理 SDK
+cdn.cookielaw.org
+# 币安官方前端 AWS WAF 人机验证与安全令牌网关
++.token.awswaf.com
 
 
 # =========================================================================
