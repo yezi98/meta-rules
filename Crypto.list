@@ -21,6 +21,7 @@
 +.binanceapi.com                      # 币安官方核心 API 数据接口
 +.binancecnt.com                      # 币安静态资源与内容分发加速通道
 +.bnbstatic.com                       # 币安官方核心图片与静态资产 CDN 网关
++.bntrace.com                         # 币安移动端链路追踪与设备安全风控网关
 
 # ── 2. 币安官方多区域与国内动态防封镜像域名 ──
 +.binancezh.com                       # 币安中文区主备用镜像站
@@ -53,6 +54,7 @@
 +.okx.com                             # 欧易 OKX 国际官方主站与交易核心
 +.okex.com                            # 欧易历史主域名 (旧版兼容重定向通道)
 +.oklink.com                          # 欧科云链多链区块链浏览器与数据看板
++.okx.cab                             # 欧易移动端高可用备用镜像与快捷防封域名
 
 # ── 2. 欧易移动端海外 Clean DNS 调度与防封解析网关 ──
 +.okx-dns.com                         # 欧易核心动态 DNS 防封调度网关
@@ -226,6 +228,15 @@ deribit.cdn.prismic.io                # Deribit 官方 Prismic 内容管理与�
 +.wintermute.com                      # Wintermute (全球顶级加密资产算法流动性与高频做市商)
 +.cyberx.com                          # CyberX (机构级算法加密资产流动性做市网络)
 
+# ── 4. Solana 生态 DEX、Meme 发射台与全链流动性追踪 ──
++.jup.ag                              # Jupiter (Solana 生态最大 DEX 交易聚合引擎)
++.jup.eco                             # Jupiter 生态服务备用网关
++.raydium.io                          # Raydium (Solana 生态核心 AMM 流动性与做市协议)
++.pump.fun                            # Pump.fun (Solana 知名 Meme 币一键发射与流动性池平台)
++.gmgn.ai                             # GMGN.ai (顶级 Meme 币狙击、聪明钱监控与跟单交易平台)
++.dexscreener.com                     # DEXScreener (全球领先全链 DEX 实时行情盯盘与专业 K 线看板)
++.dextools.io                         # DEXTools (老牌多链去中心化价格追踪与流动性池深度分析)
+
 
 # =========================================================================
 # 十三、 加密钱包、硬件冷钱包与连接通信协议
@@ -243,6 +254,8 @@ onekey.zendesk.com                    # OneKey 官方国际工单客服支持中
 
 # ── 3. 移动端非托管钱包与通用连接协议 ──
 +.trustwallet.com                     # Trust Wallet (全球知名多链非托管移动加密钱包)
++.phantom.app                         # Phantom 幻影钱包 (Solana 及多链顶级非托管移动端与插件钱包)
++.metamask.io                         # MetaMask 小狐狸钱包 (全球最大 EVM 以太坊生态 Web3 非托管钱包)
 +.walletconnect.com                   # WalletConnect (Web3 DApp 与移动钱包连接通信标准协议)
 
 
@@ -272,6 +285,7 @@ onekey.zendesk.com                    # OneKey 官方国际工单客服支持中
 +.coingecko.com                       # CoinGecko (权威加密货币数据聚合与市场指标平台)
 +.cryptocompare.com                   # CryptoCompare (机构级加密数据分析与基准指数系统)
 +.coinmap.org                         # CoinMap (全球接受比特币与加密货币实体商家商户地图)
++.tradingview.com                     # TradingView (全球领先金融与加密货币专业级行情图表及指标平台)
 
 # ── 2. 合约衍生品、爆仓监控与资金费率分析 ──
 +.coinglass.com                       # Coinglass (全球知名衍生品爆仓监控、持仓量与多空比分析看板)
@@ -281,6 +295,11 @@ onekey.zendesk.com                    # OneKey 官方国际工单客服支持中
 # ── 3. 链上资产看板、多链浏览器与行为数据 ──
 +.debank.com                          # DeBank (知名 Web3 多链资产看板、钱包跟踪与社交平台)
 +.etherscan.io                        # Etherscan (以太坊官方第一区块链浏览器与分析平台)
++.solscan.io                          # Solscan (Solana 官方权威区块链浏览器与链上分析看板)
++.defillama.com                       # DefiLlama (全网最大跨链 DeFi TVL 数据统计与多维清算分析看板)
++.rootdata.com                        # RootData (领先的 Web3 资产数据平台、机构投资与项目知识图谱)
++.arkm.com                            # Arkham 链上情报分析与实体行为追踪平台短域
++.arkhamintelligence.com              # Arkham Intelligence (全球知名加密实体智能追踪与链上侦查官方主站)
 +.zapper.fi                           # Zapper (Web3 链上资产组合看板与 DeFi 流动性管理工具)
 +.mytokenapi.com                      # MyToken 移动端行情数据、资金流向与资讯 API
 
