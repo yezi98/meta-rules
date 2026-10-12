@@ -1,0 +1,128 @@
+# NAME: emby
+# DESC: Emby 专属全量分流规则集（覆盖各大主流公益服与私服原始服务器）
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至专属代理策略组（如美西 UDP / Hysteria 2 节点直连播放）
+# 维护: 在 GitHub 提交更新后，在路由器或局域网终端执行下方命令即可秒级热重载：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/emby_domain
+
+# =========================================================================
+# 1. Ok emby 原始服务器
+# 源站: https://link00.okemby.org:8443
+# 源站: https://link01.okemby.org:8443
+# =========================================================================
+DOMAIN,link00.okemby.org
+DOMAIN,link01.okemby.org
+DOMAIN-SUFFIX,okemby.org
+DOMAIN-SUFFIX,okemby.com
+
+# =========================================================================
+# 2. EMOS emby 原始服务器
+# 源站: https://video.emos.best
+# =========================================================================
+DOMAIN,video.emos.best
+DOMAIN-SUFFIX,emos.best
+
+# =========================================================================
+# 3. 这只猫 emby 原始服务器
+# 源站: https://vipdc.covh.eu.org
+# 源站: https://eb.zzm.li
+# =========================================================================
+DOMAIN,vipdc.covh.eu.org
+DOMAIN-SUFFIX,covh.eu.org
+DOMAIN,eb.zzm.li
+DOMAIN-SUFFIX,zzm.li
+
+# =========================================================================
+# 4. Nayovo emby 原始服务器
+# 源站: https://nay.007.us.kg:443
+# =========================================================================
+DOMAIN,nay.007.us.kg
+DOMAIN-SUFFIX,007.us.kg
+
+# =========================================================================
+# 5. 佬友记 emby 原始服务器
+# 源站: https://emby.605305.xyz
+# 源站: https://cdn.605305.xyz
+# 源站: https://lyj.ysz.dpdns.org
+# =========================================================================
+DOMAIN,emby.605305.xyz
+DOMAIN,cdn.605305.xyz
+DOMAIN-SUFFIX,605305.xyz
+DOMAIN,lyj.ysz.dpdns.org
+DOMAIN-SUFFIX,ysz.dpdns.org
+
+# =========================================================================
+# 6. 一起乐呵乐呵 emby 原始服务器
+# 源站: https://emby.vincent253.us.ci
+# =========================================================================
+DOMAIN,emby.vincent253.us.ci
+DOMAIN-SUFFIX,vincent253.us.ci
+
+# =========================================================================
+# 7. 茶百道 emby 原始服务器
+# 源站: https://emby.chapanda.site
+# =========================================================================
+DOMAIN,emby.chapanda.site
+DOMAIN-SUFFIX,chapanda.site
+
+# =========================================================================
+# 8. 帝服 emby 原始服务器
+# 源站: https://emby.di0.uk
+# =========================================================================
+DOMAIN,emby.di0.uk
+DOMAIN-SUFFIX,di0.uk
+
+# =========================================================================
+# 9. HOHAI emby 原始服务器
+# 源站: https://emby-npo.hohai.eu.org
+# =========================================================================
+DOMAIN,emby-npo.hohai.eu.org
+DOMAIN-SUFFIX,hohai.eu.org
+
+# =========================================================================
+# 10. EOOS emby 原始服务器
+# 源站: https://cdn.eoos.top
+# =========================================================================
+DOMAIN,cdn.eoos.top
+DOMAIN-SUFFIX,eoos.top
+
+# =========================================================================
+# 11. ChilledMelon (冰镇西瓜) emby 原始服务器
+# 源站: https://us.chilledmelon.com
+# =========================================================================
+DOMAIN,us.chilledmelon.com
+DOMAIN-SUFFIX,chilledmelon.com
+
+# =========================================================================
+# 12. 飞跃彩虹 emby 原始服务器
+# 源站: https://fych.feiyue.lol
+# =========================================================================
+DOMAIN,fych.feiyue.lol
+DOMAIN-SUFFIX,feiyue.lol
+
+# =========================================================================
+# 13. 随时跑路 emby 原始服务器
+# 源站: https://emby.kingemby.com
+# =========================================================================
+DOMAIN,emby.kingemby.com
+DOMAIN-SUFFIX,kingemby.com
+
+# =========================================================================
+# 14. 步兵营地 Emby 原始服务器
+# 源站: https://bb.emby.edu.kg
+# =========================================================================
+DOMAIN,bb.emby.edu.kg
+DOMAIN-SUFFIX,emby.edu.kg
+
+# =========================================================================
+# 15. HG Emby 原始服务器
+# 源站: https://111660.xyz
+# 源站: https://hg.111660.xyz
+# 源站: https://hgemby.qzz.io
+# =========================================================================
+DOMAIN,111660.xyz
+DOMAIN,hg.111660.xyz
+DOMAIN-SUFFIX,111660.xyz
+DOMAIN,hgemby.qzz.io
+DOMAIN-SUFFIX,hgemby.qzz.io
+DOMAIN-SUFFIX,qzz.io
