@@ -106,6 +106,8 @@ DOMAIN-SUFFIX,bnappzh.co
 # 币安官方动态防封轮换镜像与中继
 DOMAIN-SUFFIX,yshxxy.com
 DOMAIN-SUFFIX,golvv.net
+# 币安官方自研 SaaS 边缘撮合网关专用 AWS ELB 负载均衡器 (edge-api.saasexch.com CNAME 目标)
+DOMAIN,aad90d5c0e88c4b4285bd912f64d970d-1403944741.ap-northeast-1.elb.amazonaws.com
 # 币安移动端备用动态 Webview 轮换域名 (Mokex 架构)
 DOMAIN-SUFFIX,mokexapp.cz
 DOMAIN-SUFFIX,mokexapp.info
@@ -128,6 +130,8 @@ IP-CIDR,52.198.187.114/32,no-resolve
 IP-CIDR,18.180.191.237/32,no-resolve
 # 币安官方 bntrace 设备链路追踪风控网关 AWS 东京直连节点 B (现场实测抓包捕获)
 IP-CIDR,57.180.143.38/32,no-resolve
+# 币安官方 bntrace 设备链路追踪风控网关 AWS 东京直连节点 C (现场实测抓包捕获)
+IP-CIDR,13.192.105.128/32,no-resolve
 
 
 # 二、 欧易 (OKX / OKEx) 官方生态与解析网关集群
