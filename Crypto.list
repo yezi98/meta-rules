@@ -96,6 +96,29 @@ cdn.cookielaw.org
 # 币安官方前端 AWS WAF 人机验证与安全令牌网关
 +.token.awswaf.com
 
+# ── 5. 币安移动端启动引导、动态域名下发与核心防封轮换网络 ──
+# 币安官方移动端启动引导与动态配置分发中心 (dynamic-config.json)
+d3sknckuh1o9tg.cloudfront.net
+# 币安云托管交易所跨域共享 API 网关
++.saasexch.co
+# 币安中文端专属动态多活与防封主域名
++.bnappzh.co
+# 币安官方动态防封轮换镜像与中继
++.yshxxy.com
++.golvv.net
+# 币安移动端备用动态 Webview 轮换域名 (Mokex 架构)
++.mokexapp.cz
++.mokexapp.info
++.mokexapp.io
++.mokexapp.me
++.mokexapp.net
++.mokexapp.org
++.mokexapp.tv
++.mokexapp.us
++.mokexweb.org
++.mokexweb.tv
++.mokexweb.us
+
 
 # =========================================================================
 # 二、 欧易 (OKX / OKEx) 官方生态与解析网关集群
