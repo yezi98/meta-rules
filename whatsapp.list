@@ -1,31 +1,32 @@
 # NAME: whatsapp
-# DESC: WhatsApp 消息 / 实时通道 → 策略组「💬 WhatsApp」
+# DESC: WhatsApp 消息 / 实时信令 / 核心网段全矩阵通道 → 策略组「💬 WhatsApp」
 # REPO: https://github.com/yezi98/meta-rules
-# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，替代配置文件里散落的 DOMAIN-SUFFIX 规则。
+# 用途: 供 nikki(mihomo) 以 RULE-SET (behavior: classical) 引用，替代配置文件里散落的规则。
 #
 # ⚠️ 必须与 whatsapp_media.list 配对使用，且【本文件排在它之后】：
 #      - RULE-SET,whatsapp_media,💬 WhatsApp媒体   ← 先
 #      - RULE-SET,whatsapp,💬 WhatsApp             ← 后
-#    原因：下面的 DOMAIN-SUFFIX,whatsapp.net 是宽匹配，会吃掉媒体子域
-#    （cdn/mmg/static/scontent/pps.whatsapp.net），所以媒体必须在前。
+#    原因：本规则集包含 wide 匹配 DOMAIN-SUFFIX,whatsapp.net 以及 Meta 官方 ASN，
+#    会吃掉媒体子域与 CDN IP，因此媒体规则集必须置顶优先匹配。
 #
-# 维护（改完在路由器上热更新，【不用重启 nikki】）：
-#   curl -X PUT -H "Authorization: Bearer <secret>" \
-#        http://127.0.0.1:9090/providers/rules/whatsapp
+# 维护（改完在 GitHub 提交后，路由器执行 curl 热更新即可生效，【不用重启 nikki】）：
+#   curl -X PUT -H "Authorization: Bearer 653527" \
+#        http://192.168.8.2:9090/providers/rules/whatsapp
 #   返回 204 即生效；不手动更新也会 24h 内自动拉取。
 #
-# 出口：💬 WhatsApp（select）当前钉在 🌎️ 自建TCP —— 消息是小包长连接，
-#       对 RTT 不敏感、但对"链路是否被 QoS"敏感，所以避开 UDP 原生节点。
+# 出口：💬 WhatsApp（select）建议钉在自建独享节点 —— 消息是小包长连接，
+#       独享原生静态 IP 保障账号绝对安全，杜绝共享机场节点关联封号。
 
-# ── 主域：宽匹配即可覆盖全部实测端点 ──
-# 实测出现过：api / v / g(:5222) / e1 / e14 / dit / crashlogs / dns / a.ns .whatsapp.net
-#             web / graph / faq .whatsapp.com、wa.me
+# =========================================================================
+# 一、 WhatsApp 官方核心主域与动态 API 接口
+# =========================================================================
+# 涵盖 api / v / g(:5222) / e1 / e14 / dit / crashlogs / dns / a.ns .whatsapp.net
+# 以及 web / graph / faq .whatsapp.com、wa.me 等全矩阵服务
 DOMAIN-SUFFIX,whatsapp.net
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,wa.me
 
-# ── 品牌其余顶级域 ──
-# 取自 MetaCubeX geosite/whatsapp.list（共 13 条），当前日志零命中，防将来踩坑。
+# ── 品牌其余顶级域（防漏网备用）──
 DOMAIN-SUFFIX,whatsapp.biz
 DOMAIN-SUFFIX,whatsapp.cc
 DOMAIN-SUFFIX,whatsapp.info
@@ -33,7 +34,28 @@ DOMAIN-SUFFIX,whatsapp.org
 DOMAIN-SUFFIX,whatsapp.tv
 DOMAIN-SUFFIX,whatsappbrand.com
 
-# ── WhatsApp Business / Plus ──
+# ── WhatsApp Business / Plus 官方业务域 ──
 DOMAIN-SUFFIX,whatsapp-plus.info
 DOMAIN-SUFFIX,whatsapp-plus.me
 DOMAIN-SUFFIX,whatsapp-plus.net
+
+# =========================================================================
+# 二、 WhatsApp 官方与 Meta 核心信令 / 裸 IP 直连机房网段（带 no-resolve 防 DNS 反查穿透）
+# =========================================================================
+# Meta/WhatsApp 核心 chat.cdn 与动态会话信令裸 IP 网段（2026-10-14 深度捕获 57.144/14 等）
+IP-CIDR,57.144.0.0/14,no-resolve
+IP-CIDR,57.141.0.0/16,no-resolve
+IP-CIDR,31.13.0.0/16,no-resolve
+IP-CIDR,157.240.0.0/16,no-resolve
+IP-CIDR,129.134.0.0/16,no-resolve
+IP-CIDR,69.171.224.0/19,no-resolve
+IP-CIDR,173.252.64.0/18,no-resolve
+IP-CIDR,204.15.20.0/22,no-resolve
+
+# =========================================================================
+# 三、 Meta 官方自治系统号 (ASN) 全矩阵直通（兜底防漏网）
+# =========================================================================
+# AS32934 (FACEBOOK / Meta 官方核心全球网络)
+IP-ASN,32934
+# AS63293 (FACEBOOK / Meta 备用全球骨干自治网络)
+IP-ASN,63293
