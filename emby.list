@@ -141,3 +141,12 @@ DOMAIN-SUFFIX,cc.cd
 DOMAIN,emby.yvle.de
 DOMAIN-SUFFIX,yvle.de
 
+# =========================================================================
+# 18. F2F Cloudflare Worker Emby 反代专属域名 (2026-10-15 补录)
+# 包含 us.f2f.pp.ua / hk.f2f.pp.ua / eu.f2f.pp.ua / emby.f2f.pp.ua 等
+# 源站 CNAME: emos.200038.xyz
+# =========================================================================
+DOMAIN-SUFFIX,f2f.pp.ua
+DOMAIN-SUFFIX,emos.200038.xyz
+
+
