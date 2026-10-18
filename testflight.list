@@ -1,0 +1,30 @@
+# ────────────────────────────────────────────────────────────
+# TestFlight & App Store Connect 规则集 (yezi98/meta-rules / testflight.list) —— v1
+#
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🚀 默认代理」
+# 目标: 彻底根除 TestFlight 启动卡死 (80s 超时) 及更新时报「无法接入 App Store Connect」
+# 维护: 在 GitHub 修改本文件后，路由器执行 curl 热更新即可生效，无需重启 nikki：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/testflight
+#
+# ★ 位置要求：RULE-SET,testflight 必须排在
+#     ① RULE-SET,appstore_domain   ② RULE-SET,apple_domain   ③ IP-CIDR,17.0.0.0/8
+#   之前，确保内测流量不掉入国内直连或金山云 CDN 假死节点。
+# ────────────────────────────────────────────────────────────
+
+# ── 1. TestFlight 核心业务与客户端通讯 ──
+DOMAIN-SUFFIX,testflight.apple.com
+DOMAIN,beta.apple.com
+DOMAIN-KEYWORD,testflight
+
+# ── 2. App Store Connect 开发者后台与鉴权 API ──
+# 负责测试资格验证、构建版本清单 (Build Manifest) 分发与测试员同步
+DOMAIN-SUFFIX,appstoreconnect.apple.com
+DOMAIN-KEYWORD,appstoreconnect
+DOMAIN-SUFFIX,developer.apple.com
+DOMAIN-KEYWORD,developer.apple
+
+# ── 3. Akamai / Fastly / Apple 专有 CDN 别名（开源规则集普遍缺失的死角）──
+DOMAIN-SUFFIX,testflight.apple.com.edgesuite.net
+DOMAIN-SUFFIX,appstoreconnect.apple.com.edgesuite.net
+DOMAIN-SUFFIX,appstoreconnect-lb.itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,appstoreconnect-lb-cn.itunes-apple.com.akadns.net
