@@ -7,11 +7,14 @@
 #       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/hk_banks_domain
 
 # =========================================================================
-# 一、 工银亚洲 (ICBC Asia) 核心主站、移动端与业务网关
+# 一、 工银亚洲 (ICBC Asia) & 工银国际 (ICBC International) 核心主站、移动端与业务网关
 # =========================================================================
 DOMAIN-SUFFIX,icbcasia.com
 DOMAIN-SUFFIX,icbc.com.hk
 DOMAIN,mobilehk.icbc.com.cn
+DOMAIN-SUFFIX,hk.icbc.com.cn
+DOMAIN-SUFFIX,icbci.com.hk
+DOMAIN-SUFFIX,icbc-ltd.com
 DOMAIN-KEYWORD,icbcasia
 
 # =========================================================================
@@ -20,20 +23,27 @@ DOMAIN-KEYWORD,icbcasia
 DOMAIN-SUFFIX,cncbinternational.com
 DOMAIN-SUFFIX,citicbank.com.hk
 DOMAIN-SUFFIX,citicbank.hk
+DOMAIN-SUFFIX,cncbi.com
 DOMAIN-KEYWORD,cncbinternational
 
 # =========================================================================
-# 三、 中国建设银行（亚洲） (CCB Asia)
+# 三、 中国建设银行（亚洲） (CCB Asia) & 建银国际 (CCB International)
 # =========================================================================
 DOMAIN-SUFFIX,asia.ccb.com
 DOMAIN-SUFFIX,ccb.com.hk
 DOMAIN-SUFFIX,ccbasia.com
+DOMAIN-SUFFIX,ccbintl.com
+DOMAIN-SUFFIX,ccbintl.com.hk
 
 # =========================================================================
-# 四、 中国银行（香港） (BOCHK) & 中银集团
+# 四、 中国银行（香港） (BOCHK) & 中银集团 (BOC Group / BOCI)
 # =========================================================================
 DOMAIN-SUFFIX,bochk.com
 DOMAIN-SUFFIX,bocgroup.com
+DOMAIN-SUFFIX,boci.com.hk
+DOMAIN-SUFFIX,bocifunds.com
+DOMAIN-SUFFIX,bocisec.com.hk
+DOMAIN-KEYWORD,bochk
 
 # =========================================================================
 # 五、 交通银行（香港） (BOCOM HK)
@@ -67,7 +77,20 @@ DOMAIN-SUFFIX,hkbea-whl.com
 DOMAIN-SUFFIX,cebbank.com.hk
 
 # =========================================================================
-# 十、 香港持牌虚拟银行全矩阵 (Virtual Banks)
+# 十、 香港银行合作行情数据源与金融资讯中台（杜绝漏网掉入美西默认代理）
+# 现场抓包高频捕获：经济通 ET Net (bochk01/02.etnet.com.hk)、MegaHub 汇港资讯、阿思达克 AASTOCKS
+# =========================================================================
+DOMAIN-SUFFIX,etnet.com.hk
+DOMAIN-SUFFIX,etnet.hk
+DOMAIN-SUFFIX,etnet.com.cn
+DOMAIN-KEYWORD,etnet
+DOMAIN-SUFFIX,megahubhk.com
+DOMAIN-SUFFIX,aastocks.com
+DOMAIN-SUFFIX,aastocks.com.hk
+DOMAIN-SUFFIX,quotepower.com
+
+# =========================================================================
+# 十一、 香港持牌虚拟银行全矩阵 (Virtual Banks)
 # =========================================================================
 # 众安银行 (ZA Bank)
 DOMAIN-SUFFIX,za.group
@@ -97,7 +120,7 @@ DOMAIN-SUFFIX,fusionbank.com
 DOMAIN-SUFFIX,airstarbank.com
 
 # =========================================================================
-# 十一、 香港八达通与常用移动支付 (Octopus & Tap & Go)
+# 十二、 香港八达通与常用移动支付 (Octopus & Tap & Go)
 # =========================================================================
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopuscards.com
