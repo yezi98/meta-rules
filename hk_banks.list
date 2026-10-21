@@ -1,0 +1,104 @@
+# NAME: hk_banks
+# DESC: 香港主要银行与金融机构全矩阵专属分流规则集（工银亚洲、信银国际、建行亚洲、中银香港、汇丰恒生、虚拟银行等）
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「🇭🇰 香港金融证券」策略组
+# 背景: 根治境外银行移动网关(MGS/MAAS)走大陆直连遭遇高位端口(8001/8002/8003)丢包、高延迟(2500ms -> 130ms)与 App 卡顿
+# 维护: 在 GitHub 直接修改本文件提交后，在局域网终端执行下方命令即可秒级热更新，无需重启旁路由：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/hk_banks_domain
+
+# =========================================================================
+# 一、 工银亚洲 (ICBC Asia) 核心主站、移动端与业务网关
+# =========================================================================
+DOMAIN-SUFFIX,icbcasia.com
+DOMAIN-SUFFIX,icbc.com.hk
+DOMAIN,mobilehk.icbc.com.cn
+DOMAIN-KEYWORD,icbcasia
+
+# =========================================================================
+# 二、 中信银行国际 (CNCB International / 信银国际 inMotion)
+# =========================================================================
+DOMAIN-SUFFIX,cncbinternational.com
+DOMAIN-SUFFIX,citicbank.com.hk
+DOMAIN-SUFFIX,citicbank.hk
+DOMAIN-KEYWORD,cncbinternational
+
+# =========================================================================
+# 三、 中国建设银行（亚洲） (CCB Asia)
+# =========================================================================
+DOMAIN-SUFFIX,asia.ccb.com
+DOMAIN-SUFFIX,ccb.com.hk
+DOMAIN-SUFFIX,ccbasia.com
+
+# =========================================================================
+# 四、 中国银行（香港） (BOCHK) & 中银集团
+# =========================================================================
+DOMAIN-SUFFIX,bochk.com
+DOMAIN-SUFFIX,bocgroup.com
+
+# =========================================================================
+# 五、 交通银行（香港） (BOCOM HK)
+# =========================================================================
+DOMAIN-SUFFIX,bankcomm.com.hk
+
+# =========================================================================
+# 六、 招商永隆银行 (CMB Wing Lung Bank)
+# =========================================================================
+DOMAIN-SUFFIX,cmbwinglungbank.com
+DOMAIN-SUFFIX,winglungbank.com
+
+# =========================================================================
+# 七、 汇丰银行（香港） (HSBC HK) & 恒生银行 (Hang Seng Bank)
+# =========================================================================
+DOMAIN-SUFFIX,hsbc.com.hk
+DOMAIN-SUFFIX,hangseng.com
+DOMAIN-SUFFIX,hangseng.com.hk
+DOMAIN-SUFFIX,payme.hsbc.com.hk
+DOMAIN-SUFFIX,payme.hsbc
+
+# =========================================================================
+# 八、 东亚银行 (BEA - Bank of East Asia)
+# =========================================================================
+DOMAIN-SUFFIX,hkbea.com
+DOMAIN-SUFFIX,hkbea-whl.com
+
+# =========================================================================
+# 九、 光大银行香港分行 (CEB HK)
+# =========================================================================
+DOMAIN-SUFFIX,cebbank.com.hk
+
+# =========================================================================
+# 十、 香港持牌虚拟银行全矩阵 (Virtual Banks)
+# =========================================================================
+# 众安银行 (ZA Bank)
+DOMAIN-SUFFIX,za.group
+DOMAIN-SUFFIX,zabrands.com
+DOMAIN-SUFFIX,bank.za.group
+
+# WeLab Bank (汇立银行)
+DOMAIN-SUFFIX,welab.bank
+DOMAIN-SUFFIX,welab.co
+
+# Mox Bank (渣打虚拟银行)
+DOMAIN-SUFFIX,mox.com
+
+# Livi Bank (理慧银行)
+DOMAIN-SUFFIX,livibank.com
+
+# Ant Bank (蚂蚁银行香港)
+DOMAIN-SUFFIX,antbank.hk
+
+# 平安壹账通银行 (PAOB)
+DOMAIN-SUFFIX,paob.com.hk
+
+# 富融银行 (Fusion Bank)
+DOMAIN-SUFFIX,fusionbank.com
+
+# 天星银行 (Airstar Bank)
+DOMAIN-SUFFIX,airstarbank.com
+
+# =========================================================================
+# 十一、 香港八达通与常用移动支付 (Octopus & Tap & Go)
+# =========================================================================
+DOMAIN-SUFFIX,octopus.com.hk
+DOMAIN-SUFFIX,octopuscards.com
+DOMAIN-SUFFIX,tapngo.com.hk
