@@ -79,3 +79,14 @@ IP-CIDR,183.36.18.53/32,no-resolve
 IP-CIDR,183.36.18.54/32,no-resolve
 IP-CIDR,183.36.18.55/32,no-resolve
 IP-CIDR,183.36.18.56/32,no-resolve
+
+# =========================================================================
+# 八、 港股行情数据源与合作金融资讯服务 (香港财华社 Finet Group 港股席位/深度盘口)
+# =========================================================================
+# 现场抓包捕获：fs.finet.com.cn (香港财华社 08317.HK，部署于阿里云香港，承载港股深度盘口与经纪商持股)
+# 防止因 .cn 后缀被 cn_domain 抢答直连，保障毫秒级专线直通与离岸合规
+DOMAIN-SUFFIX,finet.com.cn
+DOMAIN-SUFFIX,finet.hk
+DOMAIN-SUFFIX,roadshowing.com
+IP-CIDR,163.181.228.144/32,no-resolve
+
