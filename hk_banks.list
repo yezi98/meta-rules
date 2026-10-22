@@ -37,13 +37,15 @@ DOMAIN-SUFFIX,ccbintl.com.hk
 
 # =========================================================================
 # 四、 中国银行（香港） (BOCHK) & 中银集团 (BOC Group / BOCI)
+# 注意：中银香港 App 前端为 SPA 架构 (并发拉取 52+ 脚本)，走代理易被并发掐断触发 IJ0001
+# 建议由配置顶层优先分流至「🎯 直连」，如需代理可取消注释下述规则
 # =========================================================================
-DOMAIN-SUFFIX,bochk.com
-DOMAIN-SUFFIX,bocgroup.com
+# DOMAIN-SUFFIX,bochk.com
+# DOMAIN-SUFFIX,bocgroup.com
 DOMAIN-SUFFIX,boci.com.hk
 DOMAIN-SUFFIX,bocifunds.com
 DOMAIN-SUFFIX,bocisec.com.hk
-DOMAIN-KEYWORD,bochk
+# DOMAIN-KEYWORD,bochk
 
 # =========================================================================
 # 五、 交通银行（香港） (BOCOM HK)
