@@ -141,5 +141,13 @@ DOMAIN-SUFFIX,cc.cd
 DOMAIN,emby.yvle.de
 DOMAIN-SUFFIX,yvle.de
 
+# =========================================================================
+# 18. iEmby 原始服务器 (2026-10-24 日志审计补录，防 .cn 掉入国内直连)
+# 源站: https://vip.iemby.cn
+# =========================================================================
+DOMAIN,vip.iemby.cn
+DOMAIN-SUFFIX,iemby.cn
+
+
 
 
