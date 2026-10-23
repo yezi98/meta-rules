@@ -1,25 +1,20 @@
 # 代理补充列表
 DOMAIN-SUFFIX,starryblu.com
-# 域名后缀匹配-七尺宇
-DOMAIN-SUFFIX,qichiyu.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
-DOMAIN-KEYWORD,antbank-mo
 DOMAIN-KEYWORD,shuzijumin.com
 DOMAIN-SUFFIX,down.dllkids.xyz
 DOMAIN-SUFFIX,nikkinikki.pages.dev
 DOMAIN-SUFFIX,momomomo.pages.dev
 
-# PI
+# PI & 广告归因 SDK
 DOMAIN-SUFFIX,applovin.com
 DOMAIN-SUFFIX,onesignal.com
 DOMAIN-KEYWORD,pangle
 DOMAIN-KEYWORD,socialchain
 DOMAIN-KEYWORD,applvn
-DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,smadex.com
-DOMAIN-SUFFIX,cdn.forter.com
 DOMAIN-SUFFIX,sgsnssdk.com
 DOMAIN-SUFFIX,mintegral.net
 DOMAIN-SUFFIX,i18n-pglstatp.com
@@ -27,15 +22,10 @@ DOMAIN-SUFFIX,mtgglobals.com
 DOMAIN-SUFFIX,dsp-api.moloco.com
 DOMAIN-SUFFIX,adsmoloco.com
 
-# OKEMBY，HKA emby
-DOMAIN-SUFFIX,okemby.org
-DOMAIN-SUFFIX,hka-emby.aliz.work
-
-# okemby反代，emby.605305.xyz反代，hka-emby.aliz.work反代
+# okemby反代，emby.605305.xyz反代，hka-emby.aliz.work反代（已迁移至 emby.list 统一走 🍿 Emby）
 #DOMAIN-SUFFIX,emby.334455.dpdns.org
 #DOMAIN-SUFFIX,emby.yezi.qzz.io
 #DOMAIN-SUFFIX,cf8.us.ci
-DOMAIN-SUFFIX,okemby.com
 #DOMAIN-SUFFIX,ok.ceo.pp.ua
 #DOMAIN-SUFFIX,ok.f2f.pp.ua
 #DOMAIN-SUFFIX,ly.ceo.pp.ua
@@ -44,21 +34,15 @@ DOMAIN-SUFFIX,okemby.com
 #DOMAIN-SUFFIX,dadakuai.552554.xyz
 #DOMAIN-SUFFIX,emos.yu-wu.top
 
-# chainpredict
-DOMAIN-SUFFIX,chainpredict.com
-DOMAIN-KEYWORD,efsanetr
-
 # 国外DNS
 #DOMAIN-SUFFIX,dns.google
 #DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
 #DOMAIN-SUFFIX,dot.sb
 #DOMAIN-SUFFIX,dns.umbrella.com
 #DOMAIN-SUFFIX,dns.quad9.net
-#DOMAIN-SUFFIX,dns.google
 #DOMAIN-SUFFIX,cloudflare-dns.com
 #DOMAIN-SUFFIX,doh.dns.sb
 #DOMAIN-SUFFIX,doh.opendns.com
-#DOMAIN-SUFFIX,dns.quad9.net
 #DOMAIN-SUFFIX,hk-hkg.doh.sb
 #IP-CIDR,8.8.8.8/32,no-resolve
 #IP-CIDR,8.8.4.4/32,no-resolve

@@ -148,6 +148,9 @@ DOMAIN-SUFFIX,yvle.de
 DOMAIN,vip.iemby.cn
 DOMAIN-SUFFIX,iemby.cn
 
-
-
-
+# =========================================================================
+# 19. HKA Emby 原始服务器 (2026-10-24 从 ProxyLite.list 归口迁移)
+# 源站: https://hka-emby.aliz.work
+# =========================================================================
+DOMAIN,hka-emby.aliz.work
+DOMAIN-SUFFIX,aliz.work

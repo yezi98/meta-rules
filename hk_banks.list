@@ -109,8 +109,9 @@ DOMAIN-SUFFIX,mox.com
 # Livi Bank (理慧银行)
 DOMAIN-SUFFIX,livibank.com
 
-# Ant Bank (蚂蚁银行香港)
+# Ant Bank (蚂蚁银行香港 & 蚂蚁银行澳门)
 DOMAIN-SUFFIX,antbank.hk
+DOMAIN-KEYWORD,antbank-mo
 
 # 平安壹账通银行 (PAOB)
 DOMAIN-SUFFIX,paob.com.hk
