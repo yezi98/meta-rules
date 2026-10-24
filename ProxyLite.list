@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,i18n-pglstatp.com
 DOMAIN-SUFFIX,mtgglobals.com
 DOMAIN-SUFFIX,dsp-api.moloco.com
 DOMAIN-SUFFIX,adsmoloco.com
+DOMAIN-SUFFIX,rc-backup.com
 
 # okemby反代，emby.605305.xyz反代，hka-emby.aliz.work反代（已迁移至 emby.list 统一走 🍿 Emby）
 #DOMAIN-SUFFIX,emby.334455.dpdns.org
