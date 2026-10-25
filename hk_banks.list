@@ -128,3 +128,12 @@ DOMAIN-SUFFIX,airstarbank.com
 DOMAIN-SUFFIX,octopus.com.hk
 DOMAIN-SUFFIX,octopuscards.com
 DOMAIN-SUFFIX,tapngo.com.hk
+
+# =========================================================================
+# 十三、 奕丰金融 (FSMOne / Fundsupermart / iFAST Financial)
+# =========================================================================
+DOMAIN-SUFFIX,fundsupermart.com.hk
+DOMAIN-SUFFIX,fundsupermart.com
+DOMAIN-SUFFIX,fsmglobal.hk
+DOMAIN-SUFFIX,fsmone.com.hk
+DOMAIN-SUFFIX,ifastfinancial.com.hk
