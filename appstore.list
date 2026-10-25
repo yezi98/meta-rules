@@ -38,7 +38,10 @@ DOMAIN-SUFFIX,gsa.apple.com
 DOMAIN-SUFFIX,gsas.apple.com
 DOMAIN-SUFFIX,identity.ess.apple.com
 
-# ── 商店支撑 ──
+# ── 商店支撑与配置包 (StoreKit Bag) ──
+DOMAIN-SUFFIX,bag.itunes.apple.com
+DOMAIN,bag.itunes.apple.com
+DOMAIN,init.itunes.apple.com
 DOMAIN-SUFFIX,uts-api.itunes.apple.com
 DOMAIN-SUFFIX,se-edge.itunes.apple.com
 DOMAIN-SUFFIX,client-api.itunes.apple.com

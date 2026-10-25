@@ -79,7 +79,15 @@ DOMAIN-SUFFIX,hkbea-whl.com
 DOMAIN-SUFFIX,cebbank.com.hk
 
 # =========================================================================
-# 十、 香港银行合作行情数据源与金融资讯中台（杜绝漏网掉入美西默认代理）
+# 十、 南洋商业银行 (Nanyang Commercial Bank / NCB) & 集友银行 (Chiyu Bank)
+# =========================================================================
+DOMAIN-SUFFIX,ncb.com.hk
+DOMAIN-SUFFIX,ncbchina.cn
+DOMAIN-KEYWORD,ncb.com.hk
+DOMAIN-SUFFIX,chiyubank.com
+
+# =========================================================================
+# 十一、 香港银行合作行情数据源与金融资讯中台（杜绝漏网掉入美西默认代理）
 # 现场抓包高频捕获：经济通 ET Net (bochk01/02.etnet.com.hk)、MegaHub 汇港资讯、阿思达克 AASTOCKS
 # =========================================================================
 DOMAIN-SUFFIX,etnet.com.hk
@@ -92,7 +100,7 @@ DOMAIN-SUFFIX,aastocks.com.hk
 DOMAIN-SUFFIX,quotepower.com
 
 # =========================================================================
-# 十一、 香港持牌虚拟银行全矩阵 (Virtual Banks)
+# 十二、 香港持牌虚拟银行全矩阵 (Virtual Banks)
 # =========================================================================
 # 众安银行 (ZA Bank)
 DOMAIN-SUFFIX,za.group
