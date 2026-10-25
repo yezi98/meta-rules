@@ -56,6 +56,6 @@ IP-CIDR,204.15.20.0/22,no-resolve
 # 三、 Meta 官方自治系统号 (ASN) 全矩阵直通（兜底防漏网）
 # =========================================================================
 # AS32934 (FACEBOOK / Meta 官方核心全球网络)
-IP-ASN,32934
+IP-ASN,32934,no-resolve
 # AS63293 (FACEBOOK / Meta 备用全球骨干自治网络)
-IP-ASN,63293
+IP-ASN,63293,no-resolve
