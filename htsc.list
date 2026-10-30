@@ -1,99 +1,46 @@
-# NAME: htsc
-# DESC: 华泰证券 / 华泰国际 / 涨乐全球通 (HTSC / Zhangle Global) 全矩阵专属分流规则集
+# NAME: HTSC
+# AUTHOR: yezi98
 # REPO: https://github.com/yezi98/meta-rules
-# 用途: 供 nikki(mihomo) 与 Shadowrocket 以 RULE-SET 引用，出口定向至「🇭🇰 香港金融证券」策略组
-# 背景: 2026-10-30 华泰合规风控落地，全量捕获交易端点、行情网关、极验人机验证与一键免密鉴权，彻底规避内地源 IP 阻断交易
-# 维护: 在 GitHub 直接修改本文件提交后，在局域网终端执行下方命令即可秒级热更新，无需重启旁路由：
-#       curl -X PUT -H "Authorization: Bearer 653527" http://192.168.8.2:9090/providers/rules/htsc_domain
+# UPDATED: 2026-10-30
+# DOMAIN-SUFFIX: 19
+# DOMAIN: 3
+# IP-CIDR: 19
+# TOTAL: 41
 
-# =========================================================================
-# 一、 华泰国际 (Huatai International) 香港及海外持牌实体主站与 Web 业务平台
-# =========================================================================
-# 华泰金融控股（香港）有限公司（中央编号：AOK809），涵盖官网 www、开户中心、港美股交易入口
+# ── Huatai International HK & Zhangle Global ──
 DOMAIN-SUFFIX,htsc.com.hk
-
-# =========================================================================
-# 二、 涨乐全球通 (Zhangle Global) 海外核心交易系统、实时行情与 OpenAPI 集群
-# =========================================================================
-# 涵盖海外核心交易接口 zlglobal.htsc.com.hk (实测 AWS 香港机房部署，现场高频抓取)、移动端 H5 混合框架
 DOMAIN,zlglobal.htsc.com.hk
 DOMAIN-SUFFIX,zhangleglobal.com
 DOMAIN-SUFFIX,zhangle.com.hk
 DOMAIN-SUFFIX,zhangle.hk
 DOMAIN-SUFFIX,zlq.com.hk
 
-# =========================================================================
-# 三、 涨乐 (Zhangle) 移动云行情分发、实时资产与多活综合网关集群
-# =========================================================================
-# 现场抓包高频捕获：
-# c.zhangle.com: 移动端核心云行情、配置下发与心跳长连接
-# i.zhangle.com: 客户资产、自选股、持仓查询与实时交易通知网关
-# d.zhangle.com: 离线包下载、热更新补丁分发与 CDN 静态资源
-# im.zhangle.com: 涨乐官方即时通讯客服与在线业务咨询网关
-# m.zhangle.com: 移动端综合业务 H5 入口
+# ── Zhangle Cloud Gateway ──
 DOMAIN-SUFFIX,zhangle.com
+DOMAIN,c.zhangle.com
+DOMAIN,i.zhangle.com
 
-# =========================================================================
-# 四、 华泰证券集团核心主站、交易委托与安全鉴权系统
-# =========================================================================
-# geetest.htsc.com: 现场抓包捕获 8888 端口华泰私有极验认证服务
-# wt.htsc.com.cn: 华泰核心证券交易委托网关 (157.0.31.200)
-# htfic.htzq.com.cn: 现场抓包捕获华泰衍生品与期货综合接口
+# ── Huatai Securities Group ──
 DOMAIN-SUFFIX,htsc.com
 DOMAIN-SUFFIX,htsc.com.cn
 DOMAIN-SUFFIX,htzq.com.cn
+DOMAIN-SUFFIX,htsc-us.com
 
-# =========================================================================
-# 五、 极验 (GeeTest) 验证码、设备指纹风控与 OnePass 本机号码一键免密认证集群
-# =========================================================================
-# 【核心排障实录】：华泰 App 登录时调用 GeeTest 进行人机滑块与 OnePass 免密认证；
-# onepass.geetest.com / api.geetest.com / api.geevisit.com 若走国内直连，会直接抓取
-# 并向华泰服务端上报用户真实的国内公网 IP (如深圳电信 61.141.205.41)，导致华泰邮件风控报警！
-# 强制收口至【🇭🇰 香港金融证券】，使验证码与风控探针 100% 呈现香港洁净原生出口。
+# ── GeeTest & Sobot SDK ──
 DOMAIN-SUFFIX,geetest.com
 DOMAIN-SUFFIX,geevisit.com
 DOMAIN-SUFFIX,geetest.cn
-DOMAIN-KEYWORD,geetest
-DOMAIN-KEYWORD,geevisit
-IP-CIDR,103.143.17.0/24,no-resolve
-
-# =========================================================================
-# 六、 涨乐内嵌在线客服与智能交互系统 (智齿科技 Sobot SDK)
-# =========================================================================
-# 移动端在线客服与智能坐席，防止会话建立时反向嗅探客户端真实 IP
 DOMAIN-SUFFIX,soboten.com
 DOMAIN-SUFFIX,sobot.com
+IP-CIDR,103.143.17.0/24,no-resolve
 
-# =========================================================================
-# 七、 华泰证券美国子公司与海外分支机构
-# =========================================================================
-# Huatai Securities (USA) LLC 官方门户与业务系统
-DOMAIN-SUFFIX,htsc-us.com
-
-# =========================================================================
-# 八、 全域防漏网关键字 (Domain Keywords)
-# =========================================================================
-# 防止任何涨乐云、华泰国际或衍生子系统漏网掉入美西默认代理或国内直连
-DOMAIN-KEYWORD,zhangle
-DOMAIN-KEYWORD,zlglobal
-DOMAIN-KEYWORD,htsc
-
-# =========================================================================
-# 九、 华泰证券 / 涨乐全球通 专属机房与金融核心 IP (带 no-resolve 裸 IP 直通)
-# =========================================================================
-# 1. 涨乐全球通 AWS 香港金融机房 (zlglobal.htsc.com.hk 现场活跃解析端点)
+# ── AWS HK & Financial Core Servers ──
 IP-CIDR,18.162.164.197/32,no-resolve
 IP-CIDR,18.167.226.19/32,no-resolve
-
-# 2. 华泰极验安全与鉴权中心专有 IP (geetest.htsc.com 现场 8888 端口端点)
 IP-CIDR,221.231.135.251/32,no-resolve
 IP-CIDR,221.231.135.240/28,no-resolve
 IP-CIDR,222.190.108.0/24,no-resolve
-
-# 3. 华泰交易委托与行情服务器端点
 IP-CIDR,157.0.31.200/32,no-resolve
-
-# 4. 涨乐云行情与移动网关节点集群 (现场实测活跃长连接端点)
 IP-CIDR,125.88.253.199/32,no-resolve
 IP-CIDR,125.88.253.207/32,no-resolve
 IP-CIDR,125.88.253.248/32,no-resolve
@@ -106,11 +53,7 @@ IP-CIDR,183.36.18.54/32,no-resolve
 IP-CIDR,183.36.18.55/32,no-resolve
 IP-CIDR,183.36.18.56/32,no-resolve
 
-# =========================================================================
-# 十、 港股行情数据源与合作金融资讯服务 (香港财华社 Finet Group 港股席位/深度盘口)
-# =========================================================================
-# 现场抓包捕获：fs.finet.com.cn (香港财华社 08317.HK，部署于阿里云香港，承载港股深度盘口与经纪商持股)
-# 防止因 .cn 后缀被 cn_domain 抢答直连，保障毫秒级专线直通与离岸合规
+# ── Finet HK Market Quote Data ──
 DOMAIN-SUFFIX,finet.com.cn
 DOMAIN-SUFFIX,finet.hk
 DOMAIN-SUFFIX,roadshowing.com
