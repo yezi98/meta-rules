@@ -2,10 +2,10 @@
 # AUTHOR: yezi98
 # REPO: https://github.com/yezi98/meta-rules
 # UPDATED: 2026-10-30
-# DOMAIN-SUFFIX: 23
-# DOMAIN: 3
-# IP-CIDR: 27
-# TOTAL: 53
+# DOMAIN-SUFFIX: 28
+# DOMAIN: 5
+# IP-CIDR: 36
+# TOTAL: 69
 
 # ── Huatai International HK & Zhangle Global ──
 DOMAIN-SUFFIX,htsc.com.hk
@@ -14,11 +14,14 @@ DOMAIN-SUFFIX,zhangleglobal.com
 DOMAIN-SUFFIX,zhangle.com.hk
 DOMAIN-SUFFIX,zhangle.hk
 DOMAIN-SUFFIX,zlq.com.hk
+DOMAIN-SUFFIX,ihtfin.com
 
-# ── Zhangle Cloud Gateway ──
+# ── Zhangle Cloud Gateway & Endpoints ──
 DOMAIN-SUFFIX,zhangle.com
 DOMAIN,c.zhangle.com
 DOMAIN,i.zhangle.com
+DOMAIN,feedback.zhangle.com
+DOMAIN,trade.zhangle.com
 
 # ── Huatai Securities Group ──
 DOMAIN-SUFFIX,htsc.com
@@ -34,43 +37,65 @@ DOMAIN-SUFFIX,soboten.com
 DOMAIN-SUFFIX,sobot.com
 IP-CIDR,103.143.17.0/24,no-resolve
 
+# ── IP Geolocation & Apple Location Services ──
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,gs-loc-cn.apple.com
+DOMAIN-SUFFIX,gs-loc.apple.com
+
 # ── Carrier OnePass Cellular Gateways ──
 DOMAIN-SUFFIX,wosms.cn
 DOMAIN-SUFFIX,cmpassport.com
 DOMAIN-SUFFIX,id6.me
 DOMAIN-SUFFIX,zzx9.cn
 
-# ── Huatai Nanjing & Core Financial Servers ──
-IP-CIDR,153.3.219.0/24,no-resolve
-IP-CIDR,221.6.6.0/24,no-resolve
-IP-CIDR,112.25.190.0/24,no-resolve
-IP-CIDR,61.132.51.0/24,no-resolve
-IP-CIDR,221.231.135.251/32,no-resolve
-IP-CIDR,221.231.135.240/28,no-resolve
-IP-CIDR,222.190.108.0/24,no-resolve
-IP-CIDR,157.0.31.200/32,no-resolve
-IP-CIDR,125.88.253.199/32,no-resolve
-IP-CIDR,125.88.253.207/32,no-resolve
-IP-CIDR,125.88.253.248/32,no-resolve
-IP-CIDR,183.36.18.49/32,no-resolve
-IP-CIDR,183.36.18.50/32,no-resolve
-IP-CIDR,183.36.18.51/32,no-resolve
-IP-CIDR,183.36.18.52/32,no-resolve
-IP-CIDR,183.36.18.53/32,no-resolve
-IP-CIDR,183.36.18.54/32,no-resolve
-IP-CIDR,183.36.18.55/32,no-resolve
-IP-CIDR,183.36.18.56/32,no-resolve
-IP-CIDR,121.14.134.0/24,no-resolve
-IP-CIDR,14.119.86.0/24,no-resolve
-IP-CIDR,14.29.63.0/24,no-resolve
-IP-CIDR,183.61.230.0/23,no-resolve
-
-# ── AWS HK Core Servers ──
-IP-CIDR,18.162.164.197/32,no-resolve
-IP-CIDR,18.167.226.19/32,no-resolve
-
 # ── Finet HK Market Quote Data ──
 DOMAIN-SUFFIX,finet.com.cn
 DOMAIN-SUFFIX,finet.hk
 DOMAIN-SUFFIX,roadshowing.com
 IP-CIDR,163.181.228.144/32,no-resolve
+
+# ── Huatai China Telecom Gateways ──
+IP-CIDR,180.101.48.0/24,no-resolve
+IP-CIDR,180.101.228.0/24,no-resolve
+IP-CIDR,180.101.224.0/24,no-resolve
+IP-CIDR,222.190.108.0/24,no-resolve
+IP-CIDR,221.226.112.0/24,no-resolve
+IP-CIDR,218.2.129.0/24,no-resolve
+IP-CIDR,221.231.135.0/24,no-resolve
+IP-CIDR,221.6.6.0/24,no-resolve
+IP-CIDR,112.25.190.0/24,no-resolve
+IP-CIDR,61.132.51.0/24,no-resolve
+IP-CIDR,125.88.253.0/24,no-resolve
+IP-CIDR,183.36.18.0/24,no-resolve
+IP-CIDR,121.14.134.0/24,no-resolve
+IP-CIDR,14.119.86.0/24,no-resolve
+IP-CIDR,14.29.63.0/24,no-resolve
+IP-CIDR,183.61.230.0/23,no-resolve
+
+# ── Huatai China Unicom Gateways (AS4837) ──
+IP-CIDR,153.3.219.0/24,no-resolve
+IP-CIDR,122.96.150.0/24,no-resolve
+IP-CIDR,122.96.107.0/24,no-resolve
+IP-CIDR,157.0.28.0/24,no-resolve
+IP-CIDR,157.0.31.0/24,no-resolve
+
+# ── Huatai China Mobile Gateways (AS9808) ──
+IP-CIDR,120.195.71.0/24,no-resolve
+IP-CIDR,218.206.101.0/24,no-resolve
+IP-CIDR,223.112.1.0/24,no-resolve
+IP-CIDR,223.112.19.0/24,no-resolve
+IP-CIDR,223.112.24.0/24,no-resolve
+IP-CIDR,120.232.131.0/24,no-resolve
+
+# ── Huatai Alibaba & Huawei Cloud BGP Clusters ──
+IP-CIDR,47.106.98.0/24,no-resolve
+IP-CIDR,120.79.254.0/24,no-resolve
+IP-CIDR,124.70.163.0/24,no-resolve
+IP-CIDR,124.70.143.0/24,no-resolve
+IP-CIDR,113.44.79.0/24,no-resolve
+
+# ── AWS HK Financial Core Servers ──
+IP-CIDR,18.162.164.197/32,no-resolve
+IP-CIDR,18.167.226.19/32,no-resolve
