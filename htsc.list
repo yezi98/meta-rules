@@ -2,10 +2,10 @@
 # AUTHOR: yezi98
 # REPO: https://github.com/yezi98/meta-rules
 # UPDATED: 2026-10-30
-# DOMAIN-SUFFIX: 19
+# DOMAIN-SUFFIX: 23
 # DOMAIN: 3
-# IP-CIDR: 19
-# TOTAL: 41
+# IP-CIDR: 27
+# TOTAL: 53
 
 # ── Huatai International HK & Zhangle Global ──
 DOMAIN-SUFFIX,htsc.com.hk
@@ -34,9 +34,17 @@ DOMAIN-SUFFIX,soboten.com
 DOMAIN-SUFFIX,sobot.com
 IP-CIDR,103.143.17.0/24,no-resolve
 
-# ── AWS HK & Financial Core Servers ──
-IP-CIDR,18.162.164.197/32,no-resolve
-IP-CIDR,18.167.226.19/32,no-resolve
+# ── Carrier OnePass Cellular Gateways ──
+DOMAIN-SUFFIX,wosms.cn
+DOMAIN-SUFFIX,cmpassport.com
+DOMAIN-SUFFIX,id6.me
+DOMAIN-SUFFIX,zzx9.cn
+
+# ── Huatai Nanjing & Core Financial Servers ──
+IP-CIDR,153.3.219.0/24,no-resolve
+IP-CIDR,221.6.6.0/24,no-resolve
+IP-CIDR,112.25.190.0/24,no-resolve
+IP-CIDR,61.132.51.0/24,no-resolve
 IP-CIDR,221.231.135.251/32,no-resolve
 IP-CIDR,221.231.135.240/28,no-resolve
 IP-CIDR,222.190.108.0/24,no-resolve
@@ -52,6 +60,14 @@ IP-CIDR,183.36.18.53/32,no-resolve
 IP-CIDR,183.36.18.54/32,no-resolve
 IP-CIDR,183.36.18.55/32,no-resolve
 IP-CIDR,183.36.18.56/32,no-resolve
+IP-CIDR,121.14.134.0/24,no-resolve
+IP-CIDR,14.119.86.0/24,no-resolve
+IP-CIDR,14.29.63.0/24,no-resolve
+IP-CIDR,183.61.230.0/23,no-resolve
+
+# ── AWS HK Core Servers ──
+IP-CIDR,18.162.164.197/32,no-resolve
+IP-CIDR,18.167.226.19/32,no-resolve
 
 # ── Finet HK Market Quote Data ──
 DOMAIN-SUFFIX,finet.com.cn
