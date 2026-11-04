@@ -1,6 +1,8 @@
 # ────────────────────────────────────────────────────────────
-# App Store 域名规则集  (yezi98/meta-rules / appstore.list)  —— v2
+# App Store 域名规则集  (yezi98/meta-rules / appstore.list)  —— v3
 #
+# v3 修正：新增 downloaddispatch.itunes.apple.com（更新与下载调度网关）及 apps.mzstatic.com（图标预览静态资源）
+#         彻底从 🍎 Apple 解耦收口至 🛒 App Store 策略组，根治国内合作 CDN（如金山云）节点宕机导致 App Store 打不开/更新卡死。
 # v2 修正：buy 那条改用 DOMAIN-KEYWORD（原 DOMAIN-SUFFIX 匹配不到 p47/p57/p60-buy）
 #
 # nikki 侧配置（<<: *class 锚点默认 format: text，无需额外指定）：
@@ -18,12 +20,14 @@
 #   → App Store 报「无法连接」且时好时坏。
 # ────────────────────────────────────────────────────────────
 
-# ── 浏览 / 搜索 / 页面 ──
+# ── 浏览 / 搜索 / 页面 / 图标静态资源 ──
 DOMAIN-SUFFIX,apps.apple.com
 DOMAIN,itunes.apple.com
+DOMAIN,apps.mzstatic.com
 
-# ── 下载 / 购买 ──
+# ── 下载 / 调度 / 购买 ──
 DOMAIN-SUFFIX,iosapps.itunes.apple.com
+DOMAIN,downloaddispatch.itunes.apple.com
 # ⚠️ 必须用 DOMAIN-KEYWORD，不能用 DOMAIN-SUFFIX：
 #    p47-buy / p57-buy / p60-buy 与 buy 是【平级】子域（都挂在 itunes.apple.com 下），
 #    并不是 buy.itunes.apple.com 的下级。DOMAIN-SUFFIX 按域名层级匹配（要求前面是点），
