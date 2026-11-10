@@ -1,16 +1,12 @@
 # ────────────────────────────────────────────────────────────
-# App Store 核心下载调度与媒体静态资源规则集 (yezi98/meta-rules / appstore.list) —— v4
+# App Store 核心安装包与媒体静态资源规则集 (yezi98/meta-rules / appstore.list) —— v5
 #
-# v4 方案 B 精准分流解耦：
-#   1. 账号认证、目录浏览、购买授权、更新检查 API（apps.apple.com / itunes.apple.com / buy.itunes.apple.com / auth / bag）
-#      彻底剥离回 🍎 Apple（国内直连），确保中国大陆 Apple ID 更新国区专属 App 时
-#      以国内原生 IP 鉴权，根治“你所在的地区和国家不支持该 App”报错。
-#   2. 本规则集仅保留核心安装包下载 CDN、下载调度网关及媒体静态资源，收口至 🛒 App Store 策略组，
-#      彻底绕开金山云等国内合作 CDN 节点故障导致的下载卡死问题。
+# v5 极致解耦：
+#   1. 下载调度网关 downloaddispatch.itunes.apple.com 及商业遥测 xp.apple.com 彻底移至 🍎 Apple（国内直连），
+#      确保国区专属应用（如抖音、铁路12306、国区独占网银）在任何策略下均由国内 IP 完成鉴权与调度，
+#      彻底根治“此app在你所处的国家和地区不可用”的问题。
+#   2. 本规则集仅收录应用安装包 (IPA) 及应用媒体静态资源，收口至 🛒 App Store 策略组。
 # ────────────────────────────────────────────────────────────
-
-# ── 下载与更新调度网关 ──
-DOMAIN,downloaddispatch.itunes.apple.com
 
 # ── 商店图标与预览静态资源 CDN ──
 DOMAIN,apps.mzstatic.com
