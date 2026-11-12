@@ -55,8 +55,8 @@ DOMAIN-SUFFIX,ysz.dpdns.org
 # 6. 一起乐呵乐呵 emby 原始服务器
 # 源站: https://emby.vincent253.us.ci
 # =========================================================================
-DOMAIN,emby.vincent253.us.ci
-DOMAIN-SUFFIX,vincent253.us.ci
+#DOMAIN,emby.vincent253.us.ci
+#DOMAIN-SUFFIX,vincent253.us.ci
 
 # =========================================================================
 # 7. 茶百道 emby 原始服务器
