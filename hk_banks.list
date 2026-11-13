@@ -145,3 +145,10 @@ DOMAIN-SUFFIX,fundsupermart.com
 DOMAIN-SUFFIX,fsmglobal.hk
 DOMAIN-SUFFIX,fsmone.com.hk
 DOMAIN-SUFFIX,ifastfinancial.com.hk
+
+# =========================================================================
+# 十四、 华侨银行（香港） (OCBC Hong Kong) 及 OCBC 移动端网关
+# 日志实测捕获：ebanking.ocbc.com.hk、baldeagle.ocbc.com.hk、m.ocbc.com.hk、www.ocbc.com.hk、mobile.ocbc.com、baldeagle.ocbc.com
+# =========================================================================
+DOMAIN-SUFFIX,ocbc.com.hk
+DOMAIN-SUFFIX,ocbc.com
