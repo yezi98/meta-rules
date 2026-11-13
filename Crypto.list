@@ -169,6 +169,10 @@ DOMAIN-SUFFIX,okx-dns1.com
 # 欧易备用 DNS 解析服务 2
 DOMAIN-SUFFIX,okx-dns2.com
 
+# ── 3. 欧易官方备用镜像与设备风控网关 (2026-11-14 日志排查补录) ──
+DOMAIN-SUFFIX,ouxyi.link
+DOMAIN-SUFFIX,cnouyi.pizza
+
 
 # =========================================================================
 # 三、 Bybit (拜比特) 官方生态与动态防封网关集群

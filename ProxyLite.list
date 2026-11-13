@@ -52,3 +52,8 @@ DOMAIN-SUFFIX,rc-backup.com
 #IP-CIDR,185.222.222.222/32,no-resolve
 #IP-CIDR,208.67.222.222/32,no-resolve
 #IP-CIDR,208.67.220.220/32,no-resolve
+
+# ── 2026-11-14 日志排查补录：媒体播放插件（片头/字幕元数据） ──
+DOMAIN-SUFFIX,theintrodb.org
+DOMAIN-SUFFIX,introdb.app
+DOMAIN-SUFFIX,opensubtitles.com

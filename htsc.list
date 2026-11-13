@@ -39,3 +39,6 @@ IP-CIDR,163.181.228.144/32,no-resolve
 IP-CIDR,103.143.17.0/24,no-resolve
 IP-CIDR,18.162.164.197/32,no-resolve
 IP-CIDR,18.167.226.19/32,no-resolve
+# ── 字节/BytePlus 香港行情推送与业务联动裸 IP (2026-11-14 日志排查补录) ──
+IP-CIDR,71.18.160.17/32,no-resolve
+IP-CIDR,101.47.86.142/32,no-resolve
