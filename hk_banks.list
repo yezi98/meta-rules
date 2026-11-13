@@ -152,3 +152,9 @@ DOMAIN-SUFFIX,ifastfinancial.com.hk
 # =========================================================================
 DOMAIN-SUFFIX,ocbc.com.hk
 DOMAIN-SUFFIX,ocbc.com
+
+# =========================================================================
+# 十五、 大象银行 (Elephant Bank / elebank.com) 全系业务与移动端网关
+# 日志实测捕获 17 个子域：app / api.platform / cdn.wm / foss-hk / card / update.platform / mlang-cos-hk / dedog-report / webtcpbank.platform / newsfile.platform / webtcpbroker.platform / static.platform / connscheduler.platform / conn.platform / conn.broker / conf.platform / app.platform (.elebank.com)
+# =========================================================================
+DOMAIN-SUFFIX,elebank.com
