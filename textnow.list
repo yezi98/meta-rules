@@ -33,3 +33,9 @@ DOMAIN-SUFFIX,crcldu.com
 # ── 4. TextNow 特性开关配置 (Eppo) 与身份核验风控网关 (Persona) ──
 DOMAIN,fscdn.eppo.cloud
 DOMAIN-SUFFIX,withpersona.com
+
+# ── 5. TextNow 专属推送触发 (Braze iad-07)、广告本土校验 (Nimbus) 与 VoIP UDP RTP 媒体流 ──
+DOMAIN-SUFFIX,iad-07.braze.com
+DOMAIN-SUFFIX,braze-images.com
+DOMAIN-SUFFIX,adsbynimbus.com
+IP-CIDR,18.97.0.0/18,no-resolve
