@@ -1,0 +1,35 @@
+# NAME: textnow
+# DESC: TextNow 美国虚拟网络电话与风控防护专线规则集
+# REPO: https://github.com/yezi98/meta-rules
+# 用途: 供 nikki(mihomo) 以 RULE-SET 引用，出口定向至「📱 TextNow」(美国家宽)
+# 维护: 在 GitHub 修改本文件后，路由器执行 curl 热更新即可生效，无需重启 nikki：
+#       curl -X PUT -H "Authorization: Bearer 653527" http://127.0.0.1:9090/providers/rules/textnow
+
+# ── 1. TextNow / Enflick 核心 API、登录、消息、WebSocket 与 VoIP SIP/STUN/TURN ──
+# 涵盖 api.prod.textnow.me / event.textnow.me / static.textnow.com / prod.tncp.textnow.com / ice-server.*.prod.tncp.textnow.com / turn-global.prod.tncp.textnow.com
+DOMAIN-SUFFIX,textnow.com
+DOMAIN-SUFFIX,textnow.me
+DOMAIN-SUFFIX,textnow.net
+DOMAIN-SUFFIX,enflick.com
+
+# ── 2. TextNow 官方 S3 静态资源桶与关键字兜底 ──
+DOMAIN,textnow-static.s3.amazonaws.com
+DOMAIN,www-textnow-com-m.s3.amazonaws.com
+DOMAIN-KEYWORD,textnow
+DOMAIN-KEYWORD,enflick
+
+# ── 3. TextNow 内嵌 PerimeterX (HUMAN Security, AppID: pxk56wkc4o) 反爬/VPN 风控矩阵 ──
+# 必须与 TextNow 主 API 保持完全一致的美国家宽住宅出口 IP，杜绝掉入漏网之鱼引发机房 IP + 出口割裂拦截
+DOMAIN,collector-pxk56wkc4o.perimeterx.net
+DOMAIN,collector-pxk56wkc4o.px-cloud.net
+DOMAIN,collector-pxk56wkc4o.px-client.net
+DOMAIN,client.px-cloud.net
+DOMAIN,ift.px-cloud.net
+DOMAIN,fst-ec.px-cloud.net
+DOMAIN,dvp.px-cloud.net
+DOMAIN,captcha.px-cdn.net
+DOMAIN-SUFFIX,crcldu.com
+
+# ── 4. TextNow 特性开关配置 (Eppo) 与身份核验风控网关 (Persona) ──
+DOMAIN,fscdn.eppo.cloud
+DOMAIN-SUFFIX,withpersona.com
