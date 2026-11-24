@@ -4,8 +4,8 @@
 # UPDATED: 2026-11-25
 # DOMAIN-SUFFIX: 15
 # DOMAIN: 5
-# IP-CIDR: 19
-# TOTAL: 39
+# IP-CIDR: 32
+# TOTAL: 52
 
 # ── Huatai International HK & Zhangle Global ──
 DOMAIN-SUFFIX,htsc.com.hk
@@ -57,3 +57,17 @@ IP-CIDR,180.101.228.6/32,no-resolve
 IP-CIDR,180.101.224.8/32,no-resolve
 IP-CIDR,223.112.24.201/32,no-resolve
 IP-CIDR,120.79.254.241/32,no-resolve
+# ── 2026-11-25 二轮日志实测补录（华泰动态轮换调度/交易/行情裸 IP，端口 9100/9106/9200/9300/9600/18083）──
+IP-CIDR,113.44.79.142/32,no-resolve
+IP-CIDR,221.226.112.148/32,no-resolve
+IP-CIDR,153.3.219.115/32,no-resolve
+IP-CIDR,221.6.6.19/32,no-resolve
+IP-CIDR,221.231.135.237/32,no-resolve
+IP-CIDR,221.6.6.22/32,no-resolve
+IP-CIDR,122.96.107.231/32,no-resolve
+IP-CIDR,122.96.107.233/32,no-resolve
+IP-CIDR,122.96.150.194/32,no-resolve
+IP-CIDR,157.0.28.40/32,no-resolve
+IP-CIDR,157.0.31.198/32,no-resolve
+IP-CIDR,47.106.98.6/32,no-resolve
+IP-CIDR,124.70.143.155/32,no-resolve
