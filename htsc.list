@@ -1,11 +1,11 @@
 # NAME: HTSC
 # AUTHOR: yezi98
 # REPO: https://github.com/yezi98/meta-rules
-# UPDATED: 2026-11-06
-# DOMAIN-SUFFIX: 18
+# UPDATED: 2026-11-25
+# DOMAIN-SUFFIX: 15
 # DOMAIN: 5
-# IP-CIDR: 4
-# TOTAL: 27
+# IP-CIDR: 19
+# TOTAL: 39
 
 # ── Huatai International HK & Zhangle Global ──
 DOMAIN-SUFFIX,htsc.com.hk
@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,htsc.com
 DOMAIN-SUFFIX,htsc.com.cn
 DOMAIN-SUFFIX,htzq.com.cn
 DOMAIN-SUFFIX,htsc-us.com
+DOMAIN-SUFFIX,chinatai.com
 
 # ── Finet HK Market Quote Data ──
 DOMAIN-SUFFIX,finet.com.cn
@@ -42,3 +43,17 @@ IP-CIDR,18.167.226.19/32,no-resolve
 # ── 字节/BytePlus 香港行情推送与业务联动裸 IP (2026-11-14 日志排查补录) ──
 IP-CIDR,71.18.160.17/32,no-resolve
 IP-CIDR,101.47.86.142/32,no-resolve
+# ── 涨乐全球通 UAL 交易鉴权与多运营商直连行情/下单裸 IP (2026-11-25 日志排查补录) ──
+IP-CIDR,221.226.112.153/32,no-resolve
+IP-CIDR,221.231.135.238/32,no-resolve
+IP-CIDR,221.226.112.142/32,no-resolve
+IP-CIDR,221.231.135.251/32,no-resolve
+IP-CIDR,153.3.219.120/32,no-resolve
+IP-CIDR,124.70.163.208/32,no-resolve
+IP-CIDR,222.190.108.157/32,no-resolve
+IP-CIDR,221.6.24.100/32,no-resolve
+IP-CIDR,223.112.6.2/32,no-resolve
+IP-CIDR,180.101.228.6/32,no-resolve
+IP-CIDR,180.101.224.8/32,no-resolve
+IP-CIDR,223.112.24.201/32,no-resolve
+IP-CIDR,120.79.254.241/32,no-resolve
